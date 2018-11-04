@@ -26,6 +26,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -86,7 +93,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -108,17 +115,17 @@
 
 
 
-  <meta name="description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。  二：操作总结会话操作(session operation)    操作名 命令/快捷键 说明     新建会话 t">
+  <meta name="description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tmux工具">
 <meta property="og:url" content="www.huzhaoyang.com/2018/11/03/tmux/index.html">
 <meta property="og:site_name" content="胡朝阳的个人博客">
-<meta property="og:description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。  二：操作总结会话操作(session operation)    操作名 命令/快捷键 说明     新建会话 t">
+<meta property="og:description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-03T14:14:40.074Z">
+<meta property="og:updated_time" content="2018-11-03T16:00:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tmux工具">
-<meta name="twitter:description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。  二：操作总结会话操作(session operation)    操作名 命令/快捷键 说明     新建会话 t">
+<meta name="twitter:description" content="一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。">
 
 
 
@@ -383,13 +390,9 @@
                 
               
 
-              <time title="创建时间：2018-11-03 00:00:00 / 修改时间：22:14:40" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -447,7 +450,7 @@
 
       
         <h1 id="一：说明"><a href="#一：说明" class="headerlink" title="一：说明"></a>一：说明</h1><blockquote>
-<p>初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解<strong>会话(session)，窗口(window)，窗格(pane)</strong>的概念。<br><a href="https://www.cnblogs.com/wangqiguo/p/8905081.html#_labelTop" target="_blank" rel="noopener">linux终端复用详解</a><br>只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。</p>
+<p>初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解<strong>会话(session)，窗口(window)，窗格(pane)</strong>的概念。<br><a href="https://www.cnblogs.com/wangqiguo/p/8905081.html#_labelTop" target="_blank" rel="noopener">linux终端复用详解</a><br>只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。<br><a id="more"></a> </p>
 </blockquote>
 <h1 id="二：操作总结"><a href="#二：操作总结" class="headerlink" title="二：操作总结"></a>二：操作总结</h1><h2 id="会话操作-session-operation"><a href="#会话操作-session-operation" class="headerlink" title="会话操作(session operation)"></a>会话操作(session operation)</h2><hr>
 <table>
@@ -771,6 +774,20 @@
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/huzhaoyangcode" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:huzhaoyang423@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
 
           
           
@@ -830,15 +847,9 @@
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.5.0</div>
 
 
 
@@ -877,6 +888,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

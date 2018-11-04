@@ -26,6 +26,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -86,7 +93,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -387,13 +394,9 @@
                 
               
 
-              <time title="创建时间：2018-11-03 00:00:00 / 修改时间：22:14:40" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -444,141 +447,20 @@
 
       
         
+          <h1 id="一：说明"><a href="#一：说明" class="headerlink" title="一：说明"></a>一：说明</h1><blockquote>
+<p>初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解<strong>会话(session)，窗口(window)，窗格(pane)</strong>的概念。<br><a href="https://www.cnblogs.com/wangqiguo/p/8905081.html#_labelTop" target="_blank" rel="noopener">linux终端复用详解</a><br>只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。<br>
+          <!--noindex-->
           
-            <h1 id="一：说明"><a href="#一：说明" class="headerlink" title="一：说明"></a>一：说明</h1><blockquote>
-<p>初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解<strong>会话(session)，窗口(window)，窗格(pane)</strong>的概念。<br><a href="https://www.cnblogs.com/wangqiguo/p/8905081.html#_labelTop" target="_blank" rel="noopener">linux终端复用详解</a><br>只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。</p>
-</blockquote>
-<h1 id="二：操作总结"><a href="#二：操作总结" class="headerlink" title="二：操作总结"></a>二：操作总结</h1><h2 id="会话操作-session-operation"><a href="#会话操作-session-operation" class="headerlink" title="会话操作(session operation)"></a>会话操作(session operation)</h2><hr>
-<table>
-<thead>
-<tr>
-<th>操作名</th>
-<th style="text-align:center">命令/快捷键</th>
-<th style="text-align:right">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>新建会话</td>
-<td style="text-align:center">tmux new -s sessionName</td>
-<td style="text-align:right">其中-s为session的首字母。</td>
-</tr>
-<tr>
-<td>退出会话</td>
-<td style="text-align:center">ctrl+b d</td>
-<td style="text-align:right">ctrl+b为tmux快捷键的默认leader, d为detach的首字母，意为脱离。</td>
-</tr>
-<tr>
-<td>查看会话列表（终端环境）</td>
-<td style="text-align:center">tmux ls</td>
-<td style="text-align:right">会列出系统中所有tmux创建的会话，第一列为会话名，第二列为会话包含几个窗口。</td>
-</tr>
-<tr>
-<td>查看会话列表（会话环境）</td>
-<td style="text-align:center">ctrl+b s</td>
-<td style="text-align:right">在会话环境下列出会话列表，并且可以使用方向键进行选择，然后按Enter键，进行切换不同的会话。</td>
-</tr>
-<tr>
-<td>从终端环境进入会话</td>
-<td style="text-align:center">tmux a -t sessionName</td>
-<td style="text-align:right">其中a为attach（依附）的首字母，-t为指定已经存在的会话</td>
-</tr>
-<tr>
-<td>销毁会话（终端环境）</td>
-<td style="text-align:center">tmux kill-session -t sessionName</td>
-<td style="text-align:right">销毁已经存在的会话，-t后指定会话名</td>
-</tr>
-<tr>
-<td>销毁会话（会话环境）</td>
-<td style="text-align:center">step1) ctrl+b :  step2) 输入kill-session -t sessionName</td>
-<td style="text-align:right">先用ctrl+b :打开输入面板，然后输入kill-session -t sessionName; 注意：没有tumux哦！</td>
-</tr>
-<tr>
-<td>重命名会话（终端环境）</td>
-<td style="text-align:center">tmux rename -t old_session_name new_session_name</td>
-<td style="text-align:right">终端环境下重命名会话名</td>
-</tr>
-<tr>
-<td>重命名会话（会话环境）</td>
-<td style="text-align:center">ctrl+b $</td>
-<td style="text-align:right">在会话环境下，重命名当前会话，注意，是会话，不是窗口，重命名窗口看下面窗口操作。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="窗口操作-window-operation"><a href="#窗口操作-window-operation" class="headerlink" title=" 窗口操作(window operation)"></a> 窗口操作(window operation)</h2><hr>
-<table>
-<thead>
-<tr>
-<th>操作名</th>
-<th style="text-align:center">命令/快捷键</th>
-<th style="text-align:right">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>创建window</td>
-<td style="text-align:center">ctrl+b c</td>
-<td style="text-align:right">创建一个新的window,创建出来的窗口由窗口序号+窗口名字<em>显示，其中\</em>表示当前操作的窗口</td>
-</tr>
-<tr>
-<td>重命名window</td>
-<td style="text-align:center">ctrl+b ,</td>
-<td style="text-align:right">为当前所在的window重命名</td>
-</tr>
-<tr>
-<td>切换window</td>
-<td style="text-align:center">ctrl+b n/p/w/0</td>
-<td style="text-align:right">n(next):切换到下一个window; p(previous):切换到上一个window; 0(number):切换到0号窗口; w(windows):列出当前会话的所有的窗口，这时候可以使用上下键进行切换。</td>
-</tr>
-<tr>
-<td>关闭window</td>
-<td style="text-align:center">ctrl+b &amp;</td>
-<td style="text-align:right">关闭当前window，会提示是否要关闭，输入即可。</td>
-</tr>
-<tr>
-<td>实现鼠标滚动历史输出</td>
-<td style="text-align:center">ctrl+b [</td>
-<td style="text-align:right">默认情况输出不能往上翻滚，使用ctrl+b [即可往上翻了，退出用ctrl+c即可。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="窗格操作-pane-operation"><a href="#窗格操作-pane-operation" class="headerlink" title=" 窗格操作(pane operation)"></a> 窗格操作(pane operation)</h2><hr>
-<table>
-<thead>
-<tr>
-<th>操作名</th>
-<th style="text-align:center">命令/快捷键</th>
-<th style="text-align:right">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>垂直分屏</td>
-<td style="text-align:center">ctrl+b %</td>
-<td style="text-align:right">把当前window垂直分为两个</td>
-</tr>
-<tr>
-<td>水平分屏</td>
-<td style="text-align:center">ctrl+b “</td>
-<td style="text-align:right">把当前window水平分为两个</td>
-</tr>
-<tr>
-<td>切换窗格</td>
-<td style="text-align:center">ctrl+b Up/Down/Left/Right</td>
-<td style="text-align:right">切换窗格</td>
-</tr>
-<tr>
-<td>删除窗格</td>
-<td style="text-align:center">ctrl+b x</td>
-<td style="text-align:right">关闭当前使用的窗格，关闭之前会提示，输入y即可</td>
-</tr>
-</tbody>
-</table>
-
-          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/03/tmux/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
-    </div>
+    </p></blockquote></div>
 
     
 
@@ -673,13 +555,9 @@
                 
               
 
-              <time title="创建时间：2018-11-03 00:00:00 / 修改时间：22:14:25" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-03T00:00:00+08:00">2018-11-03</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -730,30 +608,19 @@
 
       
         
+          <p><strong>umount命令</strong> 用来卸载文件系统。<br>
+          <!--noindex-->
           
-            <p><strong>umount命令</strong> 用来卸载文件系统。</p>
-<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a><strong>语法</strong></h4><blockquote>
-<p><strong><em>umount  [选项]  [设备名或挂载点]</em></strong></p>
-</blockquote>
-<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a><strong>选项</strong></h4><blockquote>
-<p>目前还没用用到比较常用的参数，等遇见了将进行更新。</p>
-</blockquote>
-<h4 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a><strong>实例1</strong></h4><pre><code>$mount /dev/sdb2 /mnt
-    $umount /dev/sdb2
-
-            说明：将sdb2设备从挂载点上卸载，若此设备并没有
-            被挂载将报错：umount: /dev/sdb2: not mounted
-</code></pre><h4 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a><strong>实例2</strong></h4><pre><code>$mount /dev/sdb2 /mnt
-$umount /mnt
-
-说明：将挂载在/mnt上的文件系统卸载，
-若/mnt上并没有挂载任何
-设备将报错：umount: /mnt: not mounted
-</code></pre>
-          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/03/unmount/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -862,6 +729,20 @@ $umount /mnt
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/huzhaoyangcode" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:huzhaoyang423@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
 
           
           
@@ -905,15 +786,9 @@ $umount /mnt
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.5.0</div>
 
 
 
@@ -952,6 +827,8 @@ $umount /mnt
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
