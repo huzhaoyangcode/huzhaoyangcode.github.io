@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[本博客目录规划]]></title>
+    <url>%2F2018%2F11%2F29%2FmyCategories%2F</url>
+    <content type="text"><![CDATA[一：说明本文规划了本博客的目录结构，以扁平化为原则，尽力做到清晰易懂。 二：目录结构和说明 1、计算机开发工具本目录下放置一些常用开发工具的总结，例如tmux, wireshark等等。 2、linux常用shell命令 该目录下放置所有常用linux shell命令的总结，并且在后期要在本目录下进行二次分类，便于更好的理解和记忆命令。如磁盘管理类，网络管理类等等。 3、问题记录和解决记录该目录下记录工作中常见的一些问题，和解决记录。为了方便工作的时候进行快速查阅。 4、因思成文该目录下放置自己因思考而产生的文章，有读后感，有闲思感，有异想文。凡此等等只为一吐为快，并无深意，不喜勿喷。 5、英语学习该目录下放置所有和英语相关的文章，有语法，词汇，写作，感悟，翻译等等，只为提高英语水平。 6、目标与规划该目录下放置所有的梦想，目标，规划，策略，日程表，打卡等。只为记录自己逐梦的身影。 7、专题教程该目录下放置自己写的教程，只有能教人的知识，才是自己的知识。我创建博客的初心是分享和总结，勿忘初心。]]></content>
+      <categories>
+        <category>目标与规划</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[tmux工具]]></title>
     <url>%2F2018%2F11%2F03%2Ftmux%2F</url>
     <content type="text"><![CDATA[一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。 二：操作总结会话操作(session operation) 操作名 命令/快捷键 说明 新建会话 tmux new -s sessionName 其中-s为session的首字母。 退出会话 ctrl+b d ctrl+b为tmux快捷键的默认leader, d为detach的首字母，意为脱离。 查看会话列表（终端环境） tmux ls 会列出系统中所有tmux创建的会话，第一列为会话名，第二列为会话包含几个窗口。 查看会话列表（会话环境） ctrl+b s 在会话环境下列出会话列表，并且可以使用方向键进行选择，然后按Enter键，进行切换不同的会话。 从终端环境进入会话 tmux a -t sessionName 其中a为attach（依附）的首字母，-t为指定已经存在的会话 销毁会话（终端环境） tmux kill-session -t sessionName 销毁已经存在的会话，-t后指定会话名 销毁会话（会话环境） step1) ctrl+b : step2) 输入kill-session -t sessionName 先用ctrl+b :打开输入面板，然后输入kill-session -t sessionName; 注意：没有tumux哦！ 重命名会话（终端环境） tmux rename -t old_session_name new_session_name 终端环境下重命名会话名 重命名会话（会话环境） ctrl+b $ 在会话环境下，重命名当前会话，注意，是会话，不是窗口，重命名窗口看下面窗口操作。 窗口操作(window operation) 操作名 命令/快捷键 说明 创建window ctrl+b c 创建一个新的window,创建出来的窗口由窗口序号+窗口名字显示，其中\表示当前操作的窗口 重命名window ctrl+b , 为当前所在的window重命名 切换window ctrl+b n/p/w/0 n(next):切换到下一个window; p(previous):切换到上一个window; 0(number):切换到0号窗口; w(windows):列出当前会话的所有的窗口，这时候可以使用上下键进行切换。 关闭window ctrl+b &amp; 关闭当前window，会提示是否要关闭，输入即可。 实现鼠标滚动历史输出 ctrl+b [ 默认情况输出不能往上翻滚，使用ctrl+b [即可往上翻了，退出用ctrl+c即可。 窗格操作(pane operation) 操作名 命令/快捷键 说明 垂直分屏 ctrl+b % 把当前window垂直分为两个 水平分屏 ctrl+b “ 把当前window水平分为两个 切换窗格 ctrl+b Up/Down/Left/Right 切换窗格 删除窗格 ctrl+b x 关闭当前使用的窗格，关闭之前会提示，输入y即可]]></content>
       <categories>
-        <category>常用工具</category>
+        <category>计算机开发工具</category>
       </categories>
   </entry>
   <entry>
@@ -13,8 +21,7 @@
     <url>%2F2018%2F11%2F03%2Funmount%2F</url>
     <content type="text"><![CDATA[umount命令 用来卸载文件系统。 语法 umount [选项] [设备名或挂载点] 选项 目前还没用用到比较常用的参数，等遇见了将进行更新。 实例1$mount /dev/sdb2 /mnt $umount /dev/sdb2 说明：将sdb2设备从挂载点上卸载，若此设备并没有 被挂载将报错：umount: /dev/sdb2: not mounted 实例2$mount /dev/sdb2 /mnt $umount /mnt 说明：将挂载在/mnt上的文件系统卸载， 若/mnt上并没有挂载任何 设备将报错：umount: /mnt: not mounted]]></content>
       <categories>
-        <category>常用linux命令</category>
-        <category>测试</category>
+        <category>linux常用shell命令</category>
       </categories>
   </entry>
 </search>
