@@ -1,9 +1,1664 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ab 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fab%2F</url>
+    <content type="text"><![CDATA[ab命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[alias 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Falias%2F</url>
+    <content type="text"><![CDATA[alias命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[apt-cache 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fapt-cache%2F</url>
+    <content type="text"><![CDATA[apt-cache命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[aptitude 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Faptitude%2F</url>
+    <content type="text"><![CDATA[aptitude命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[apt-get 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fapt-get%2F</url>
+    <content type="text"><![CDATA[apt-get命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[at 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fat%2F</url>
+    <content type="text"><![CDATA[at命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[arp 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Farp%2F</url>
+    <content type="text"><![CDATA[arp命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[awk 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fawk%2F</url>
+    <content type="text"><![CDATA[awk命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[basename 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fbasename%2F</url>
+    <content type="text"><![CDATA[basename命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[bc 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fbc%2F</url>
+    <content type="text"><![CDATA[bc命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[bunzip2 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fbunzip2%2F</url>
+    <content type="text"><![CDATA[bunzip2命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[bzip2 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fbzip2%2F</url>
+    <content type="text"><![CDATA[bzip2命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cat 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcat%2F</url>
+    <content type="text"><![CDATA[cat命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcd%2F</url>
+    <content type="text"><![CDATA[cd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chage 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchage%2F</url>
+    <content type="text"><![CDATA[chage命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chattr 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchattr%2F</url>
+    <content type="text"><![CDATA[chattr命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chgrp 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchgrp%2F</url>
+    <content type="text"><![CDATA[chgrp命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chmod 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchmod%2F</url>
+    <content type="text"><![CDATA[chmod命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chkconfig 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchkconfig%2F</url>
+    <content type="text"><![CDATA[chkconfig命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[chown 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fchown%2F</url>
+    <content type="text"><![CDATA[chown命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[clear 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fclear%2F</url>
+    <content type="text"><![CDATA[clear命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cp 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcp%2F</url>
+    <content type="text"><![CDATA[cp命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cpio 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcpio%2F</url>
+    <content type="text"><![CDATA[cpio命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[crontab 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcrontab%2F</url>
+    <content type="text"><![CDATA[crontab命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[curl 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcurl%2F</url>
+    <content type="text"><![CDATA[curl命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cut 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fcut%2F</url>
+    <content type="text"><![CDATA[cut命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[date 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdate%2F</url>
+    <content type="text"><![CDATA[date命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[declare 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdeclare%2F</url>
+    <content type="text"><![CDATA[declare命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[df 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdf%2F</url>
+    <content type="text"><![CDATA[df命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dhclient 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdhclient%2F</url>
+    <content type="text"><![CDATA[dhclient命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[diff 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdiff%2F</url>
+    <content type="text"><![CDATA[diff命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dig 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdig%2F</url>
+    <content type="text"><![CDATA[dig命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dirname 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdirname%2F</url>
+    <content type="text"><![CDATA[dirname命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dmidecode 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdmidecode%2F</url>
+    <content type="text"><![CDATA[dmidecode命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[du 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdu%2F</url>
+    <content type="text"><![CDATA[du命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dump 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdump%2F</url>
+    <content type="text"><![CDATA[dump命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[dumpe2fs 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fdumpe2fs%2F</url>
+    <content type="text"><![CDATA[dumpe2fs命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[echo 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fecho%2F</url>
+    <content type="text"><![CDATA[echo命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[edquota 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fedquota%2F</url>
+    <content type="text"><![CDATA[edquota命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[env 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fenv%2F</url>
+    <content type="text"><![CDATA[env命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ethtool 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fethtool%2F</url>
+    <content type="text"><![CDATA[ethtool命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[export 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fexport%2F</url>
+    <content type="text"><![CDATA[export命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[fdisk 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffdisk%2F</url>
+    <content type="text"><![CDATA[fdisk命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[file 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffile%2F</url>
+    <content type="text"><![CDATA[file命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[find 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffind%2F</url>
+    <content type="text"><![CDATA[find命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[finger 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffinger%2F</url>
+    <content type="text"><![CDATA[finger命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[fsck 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffsck%2F</url>
+    <content type="text"><![CDATA[fsck命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[free 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ffree%2F</url>
+    <content type="text"><![CDATA[free命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[gpasswd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgpasswd%2F</url>
+    <content type="text"><![CDATA[gpasswd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[grep 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgrep%2F</url>
+    <content type="text"><![CDATA[grep命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[groupadd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgroupadd%2F</url>
+    <content type="text"><![CDATA[groupadd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[groupdel 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgroupdel%2F</url>
+    <content type="text"><![CDATA[groupdel命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[gunzip 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgunzip%2F</url>
+    <content type="text"><![CDATA[gunzip命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[gzip 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fgzip%2F</url>
+    <content type="text"><![CDATA[gzip命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[halt 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fhalt%2F</url>
+    <content type="text"><![CDATA[halt命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[head 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fhead%2F</url>
+    <content type="text"><![CDATA[head命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[help 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fhelp%2F</url>
+    <content type="text"><![CDATA[help命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>帮助命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[history 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fhistory%2F</url>
+    <content type="text"><![CDATA[history命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[hostname 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fhostname%2F</url>
+    <content type="text"><![CDATA[hostname命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[iconv 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ficonv%2F</url>
+    <content type="text"><![CDATA[iconv命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[id 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fid%2F</url>
+    <content type="text"><![CDATA[id命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ifconfig 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fifconfig%2F</url>
+    <content type="text"><![CDATA[ifconfig命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ifdown 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fifdown%2F</url>
+    <content type="text"><![CDATA[ifdown命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[iftop 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fiftop%2F</url>
+    <content type="text"><![CDATA[iftop命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ifup 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fifup%2F</url>
+    <content type="text"><![CDATA[ifup命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[info 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Finfo%2F</url>
+    <content type="text"><![CDATA[info命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>帮助命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[init 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Finit%2F</url>
+    <content type="text"><![CDATA[init命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[kill 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fkill%2F</url>
+    <content type="text"><![CDATA[kill命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[jobs 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fjobs%2F</url>
+    <content type="text"><![CDATA[jobs命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[killall 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fkillall%2F</url>
+    <content type="text"><![CDATA[killall命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lastlog 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flastlog%2F</url>
+    <content type="text"><![CDATA[lastlog命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[last 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flast%2F</url>
+    <content type="text"><![CDATA[last命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ldconfig 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fldconfig%2F</url>
+    <content type="text"><![CDATA[ldconfig命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ldd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fldd%2F</url>
+    <content type="text"><![CDATA[ldd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[less 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fless%2F</url>
+    <content type="text"><![CDATA[less命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ln 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fln%2F</url>
+    <content type="text"><![CDATA[ln命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[locale 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flocale%2F</url>
+    <content type="text"><![CDATA[locale命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[locate 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flocate%2F</url>
+    <content type="text"><![CDATA[locate命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ls 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fls%2F</url>
+    <content type="text"><![CDATA[ls命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lsattr 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flsattr%2F</url>
+    <content type="text"><![CDATA[lsattr命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lsb_release 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flsb_release%2F</url>
+    <content type="text"><![CDATA[lsb_release命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lsmod 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flsmod%2F</url>
+    <content type="text"><![CDATA[lsmod命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lsof 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flsof%2F</url>
+    <content type="text"><![CDATA[lsof命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lvcreate 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flvcreate%2F</url>
+    <content type="text"><![CDATA[lvcreate命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lvdisplay 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flvdisplay%2F</url>
+    <content type="text"><![CDATA[lvdisplay命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lvremove 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flvremove%2F</url>
+    <content type="text"><![CDATA[lvremove命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lvresize 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flvresize%2F</url>
+    <content type="text"><![CDATA[lvresize命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[lvscan 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flvscan%2F</url>
+    <content type="text"><![CDATA[lvscan命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[man 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fman%2F</url>
+    <content type="text"><![CDATA[man命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>帮助命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[md5sum 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmd5sum%2F</url>
+    <content type="text"><![CDATA[md5sum命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mii-tool 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmii-tool%2F</url>
+    <content type="text"><![CDATA[mii-tool命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mke2fs 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmke2fs%2F</url>
+    <content type="text"><![CDATA[mke2fs命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mkdir 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmkdir%2F</url>
+    <content type="text"><![CDATA[mkdir命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mkfs 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmkfs%2F</url>
+    <content type="text"><![CDATA[mkfs命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[modprobe 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmodprobe%2F</url>
+    <content type="text"><![CDATA[modprobe命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[more 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmore%2F</url>
+    <content type="text"><![CDATA[more命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mount 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmount%2F</url>
+    <content type="text"><![CDATA[mount命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mv 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmv%2F</url>
+    <content type="text"><![CDATA[mv命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mutt 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fmutt%2F</url>
+    <content type="text"><![CDATA[mutt命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nc 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnc%2F</url>
+    <content type="text"><![CDATA[nc命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[netstat 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnetstat%2F</url>
+    <content type="text"><![CDATA[netstat命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[newgrp 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnewgrp%2F</url>
+    <content type="text"><![CDATA[newgrp命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nl 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnl%2F</url>
+    <content type="text"><![CDATA[nl命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nmap 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnmap%2F</url>
+    <content type="text"><![CDATA[nmap命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nohup 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnohup%2F</url>
+    <content type="text"><![CDATA[nohup命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nslookup 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fnslookup%2F</url>
+    <content type="text"><![CDATA[nslookup命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ntpdate 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fntpdate%2F</url>
+    <content type="text"><![CDATA[ntpdate命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ntpd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fntpd%2F</url>
+    <content type="text"><![CDATA[ntpd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ntsysv 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fntsysv%2F</url>
+    <content type="text"><![CDATA[ntsysv命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[parted 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fparted%2F</url>
+    <content type="text"><![CDATA[parted命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[passwd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpasswd%2F</url>
+    <content type="text"><![CDATA[passwd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[paste 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpaste%2F</url>
+    <content type="text"><![CDATA[paste命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ping 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fping%2F</url>
+    <content type="text"><![CDATA[ping命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pkill 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpkill%2F</url>
+    <content type="text"><![CDATA[pkill命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[poweroff 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpoweroff%2F</url>
+    <content type="text"><![CDATA[poweroff命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ps 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fps%2F</url>
+    <content type="text"><![CDATA[ps命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pstree 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpstree%2F</url>
+    <content type="text"><![CDATA[pstree命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pvcreate 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpvcreate%2F</url>
+    <content type="text"><![CDATA[pvcreate命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pvdisplay 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpvdisplay%2F</url>
+    <content type="text"><![CDATA[pvdisplay命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pvremove 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpvremove%2F</url>
+    <content type="text"><![CDATA[pvremove命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pvscan 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpvscan%2F</url>
+    <content type="text"><![CDATA[pvscan命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[quota 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fquota%2F</url>
+    <content type="text"><![CDATA[quota命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pwd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fpwd%2F</url>
+    <content type="text"><![CDATA[pwd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[quotacheck 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fquotacheck%2F</url>
+    <content type="text"><![CDATA[quotacheck命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[quotaon 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fquotaon%2F</url>
+    <content type="text"><![CDATA[quotaon命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[quotaoff 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fquotaoff%2F</url>
+    <content type="text"><![CDATA[quotaoff命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[read 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fread%2F</url>
+    <content type="text"><![CDATA[read命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[reboot 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Freboot%2F</url>
+    <content type="text"><![CDATA[reboot命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rename 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frename%2F</url>
+    <content type="text"><![CDATA[rename命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[repquota 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frepquota%2F</url>
+    <content type="text"><![CDATA[repquota命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[resize2fs 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fresize2fs%2F</url>
+    <content type="text"><![CDATA[resize2fs命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[restore 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frestore%2F</url>
+    <content type="text"><![CDATA[restore命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rm 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frm%2F</url>
+    <content type="text"><![CDATA[rm命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rmdir 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frmdir%2F</url>
+    <content type="text"><![CDATA[rmdir命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rpm 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frpm%2F</url>
+    <content type="text"><![CDATA[rpm命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rpm2cpio 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frpm2cpio%2F</url>
+    <content type="text"><![CDATA[rpm2cpio命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[runlevel 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frunlevel%2F</url>
+    <content type="text"><![CDATA[runlevel命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rz 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frz%2F</url>
+    <content type="text"><![CDATA[rz命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sar 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsar%2F</url>
+    <content type="text"><![CDATA[sar命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sed 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsed%2F</url>
+    <content type="text"><![CDATA[sed命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[scp 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fscp%2F</url>
+    <content type="text"><![CDATA[scp命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[seq 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fseq%2F</url>
+    <content type="text"><![CDATA[seq命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[setfacl 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsetfacl%2F</url>
+    <content type="text"><![CDATA[setfacl命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[set 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fset%2F</url>
+    <content type="text"><![CDATA[set命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[setquota 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsetquota%2F</url>
+    <content type="text"><![CDATA[setquota命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[setup 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsetup%2F</url>
+    <content type="text"><![CDATA[setup命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[shutdown 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fshutdown%2F</url>
+    <content type="text"><![CDATA[shutdown命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sort 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsort%2F</url>
+    <content type="text"><![CDATA[sort命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[source 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsource%2F</url>
+    <content type="text"><![CDATA[source命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[stat 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fstat%2F</url>
+    <content type="text"><![CDATA[stat命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[su 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsu%2F</url>
+    <content type="text"><![CDATA[su命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sync 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsync%2F</url>
+    <content type="text"><![CDATA[sync命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sz 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fsz%2F</url>
+    <content type="text"><![CDATA[sz命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tac 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftac%2F</url>
+    <content type="text"><![CDATA[tac命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tar 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftar%2F</url>
+    <content type="text"><![CDATA[tar命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tcpdump 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftcpdump%2F</url>
+    <content type="text"><![CDATA[tcpdump命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[telnet 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftelnet%2F</url>
+    <content type="text"><![CDATA[telnet命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[time 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftime%2F</url>
+    <content type="text"><![CDATA[time命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[top 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftop%2F</url>
+    <content type="text"><![CDATA[top命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[touch 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftouch%2F</url>
+    <content type="text"><![CDATA[touch命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[traceroute 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftraceroute%2F</url>
+    <content type="text"><![CDATA[traceroute命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tree 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftree%2F</url>
+    <content type="text"><![CDATA[tree命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[umask 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fumask%2F</url>
+    <content type="text"><![CDATA[umask命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[unalias 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Funalias%2F</url>
+    <content type="text"><![CDATA[unalias命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[unset 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Funset%2F</url>
+    <content type="text"><![CDATA[unset命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[uniq 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Funiq%2F</url>
+    <content type="text"><![CDATA[uniq命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[unzip 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Funzip%2F</url>
+    <content type="text"><![CDATA[unzip命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[uptime 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fuptime%2F</url>
+    <content type="text"><![CDATA[uptime命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[useradd 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fuseradd%2F</url>
+    <content type="text"><![CDATA[useradd命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[userdel 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fuserdel%2F</url>
+    <content type="text"><![CDATA[userdel命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>用户管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgcreate 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgcreate%2F</url>
+    <content type="text"><![CDATA[vgcreate命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgdisplay 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgdisplay%2F</url>
+    <content type="text"><![CDATA[vgdisplay命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgextend 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgextend%2F</url>
+    <content type="text"><![CDATA[vgextend命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgremove 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgremove%2F</url>
+    <content type="text"><![CDATA[vgremove命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgreduce 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgreduce%2F</url>
+    <content type="text"><![CDATA[vgreduce命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vgscan 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvgscan%2F</url>
+    <content type="text"><![CDATA[vgscan命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vimdiff 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fvimdiff%2F</url>
+    <content type="text"><![CDATA[vimdiff命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[w 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fw%2F</url>
+    <content type="text"><![CDATA[w命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[wget 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fwget%2F</url>
+    <content type="text"><![CDATA[wget命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[whereis 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fwhereis%2F</url>
+    <content type="text"><![CDATA[whereis命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[which 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fwhich%2F</url>
+    <content type="text"><![CDATA[which命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[who 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fwho%2F</url>
+    <content type="text"><![CDATA[who命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>关机重启</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[zip 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fzip%2F</url>
+    <content type="text"><![CDATA[zip命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>压缩和解压</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[linux常用shell命令分类]]></title>
+    <url>%2F2018%2F12%2F05%2FshellCommandCategories%2F</url>
+    <content type="text"><![CDATA[一：说明本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 二：分类1、文件和目录管理（31） 命令名 功能说明 cd pwd mkdir rmdir tree ls touch cp mv rm cat more less head ln diff vimdiff rename stat md5sum paste nl sort uniq seq read echo cut grep awk sed 2、权限管理（7） 命令名 功能说明 chmod chown chgrp umask setfacl chattr lsattr 3、用户管理（7） 命令名 功能说明 useradd passwd userdel groupadd groupdel gpasswd newgrp 4、查找命令（7） 命令名 功能说明 which whereis locate find grep history finger 5、帮助命令（3） 命令名 功能说明 man help info 6、压缩和解压（7） 命令名 功能说明 tar zip unzip gzip gunzip bzip2 bunzip2 7、网络管理（24） 命令名 功能说明 ping ifconfig netstat nslookup dig curl wget traceroute nmap arp telnet tcpdump ab scp ifup ifdown dhclient nc iftop ntpdate ntpd mutt ethtool mii-tool 命令用法 8、系统管理（53） 命令名 功能说明 w who last lastlog finger id ps top pstree free sar uptime jobs lsb_release lsof file chkconfig setup sync su du at crontab date alias unalias chage set unset export env locale declare source dump restore bc nohup lsmod tac dirname basename hostname time clear kill killall pkill modprobe iconv dmidecode ntsysv runlevel 9、关机重启（6） 命令名 功能说明 init who reboot shutdown halt poweroff 10、软件安装与卸载（10） 命令名 功能说明 rpm cpio rpm2cpio ldconfig apt-get apt-cache aptitude ldd sz rz 11、磁盘管理（32） 命令名 功能说明 df fsck mount unmount dumpe2fs fdisk mkfs mke2fs parted quotacheck edquota quotaon quotaoff quota repquota setquota pvcreate pvscan pvdisplay pvremove vgcreate vgscan vgdisplay vgextend vgreduce vgremove lvcreate lvscan lvdisplay lvresize resize2fs lvremove]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[月日程规划和打卡记录]]></title>
     <url>%2F2018%2F12%2F02%2FmyWeekPlan%2F</url>
-    <content type="text"><![CDATA[一：说明 本文规划了我的每月周一到周五的日程表，根据时间规划三八定律进行规划，每月一号更新新的日程表，周六周日的日程表在周五当天进行更新，打卡记录见下文。 二：日程表2018年12月3日～2018年12月30日工作日日程表 1 2 3 4 5 6 7 8 9 10 11 12 13 14 星期一 计算机操作系统 计算机操作系统 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 吉他 吉他 霍乱时期的爱情 星期二 计算机网络 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 星期三 计算机操作系统 计算机操作系统 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 星期四 计算机网络 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 星期五 计算机操作系统 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 吉他 吉他 霍乱时期的爱情 2018年12月3日～2018年12月30日打卡记录表 日期 星期 完成个数 未完成项目 原因 12/3 星期一 14 0 12/4 星期二 12/5 星期三 12/6 星期四 12/7 星期五]]></content>
+    <content type="text"><![CDATA[一：说明 本文规划了我的每月周一到周五的日程表，根据时间规划三八定律进行规划，每月一号更新新的日程表，周六周日的日程表在周五当天进行更新，打卡记录见下文。 二：日程表2018年12月3日～2018年12月30日工作日日程表 1 2 3 4 5 6 7 8 9 10 11 12 13 14 星期一 计算机操作系统 计算机操作系统 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 吉他 吉他 霍乱时期的爱情 星期二 计算机网络 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 星期三 计算机操作系统 计算机操作系统 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 星期四 计算机网络 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 星期五 计算机操作系统 计算机网络 书虫听力 工作1 工作2 单词30+新闻20 工作3 工作4 工作5 工作6 书虫阅读 吉他 吉他 霍乱时期的爱情 2018年12月3日～2018年12月30日打卡记录表 日期 星期 完成个数 未完成项目 原因 12/3 星期一 14 0 12/4 星期二 14 0 12/5 星期三 12/6 星期四 12/7 星期五]]></content>
       <categories>
         <category>目标与规划</category>
       </categories>
