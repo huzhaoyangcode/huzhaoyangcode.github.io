@@ -1198,21 +1198,21 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[rmdir 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Frmdir%2F</url>
-    <content type="text"><![CDATA[rmdir命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[rpm 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Frpm%2F</url>
     <content type="text"><![CDATA[rpm命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>软件安装与卸载</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rmdir 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Frmdir%2F</url>
+    <content type="text"><![CDATA[rmdir命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
