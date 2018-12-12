@@ -1465,21 +1465,21 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[traceroute 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftraceroute%2F</url>
-    <content type="text"><![CDATA[traceroute命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>网络管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[tree 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Ftree%2F</url>
     <content type="text"><![CDATA[tree命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[traceroute 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftraceroute%2F</url>
+    <content type="text"><![CDATA[traceroute命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
       </categories>
   </entry>
   <entry>
