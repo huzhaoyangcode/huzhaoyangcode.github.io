@@ -96,21 +96,21 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[awk 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fawk%2F</url>
-    <content type="text"><![CDATA[awk命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[basename 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fbasename%2F</url>
     <content type="text"><![CDATA[basename命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[awk 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fawk%2F</url>
+    <content type="text"><![CDATA[awk命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -663,18 +663,18 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[last 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Flast%2F</url>
-    <content type="text"><![CDATA[last命令 待添加。 语法选项]]></content>
+    <title><![CDATA[lastlog 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flastlog%2F</url>
+    <content type="text"><![CDATA[lastlog命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[lastlog 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Flastlog%2F</url>
-    <content type="text"><![CDATA[lastlog命令 待添加。 语法选项]]></content>
+    <title><![CDATA[last 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flast%2F</url>
+    <content type="text"><![CDATA[last命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
@@ -1421,25 +1421,25 @@
   <entry>
     <title><![CDATA[tar 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Ftar%2F</url>
-    <content type="text"><![CDATA[tar命令 待添加。 语法选项]]></content>
+    <content type="text"><![CDATA[tar命令用来压缩文件，解压缩文件，打包文件。 语法1tar + [主选项，辅选项] +[文件列表/目录] 说明：命令的主选项是必须的，辅选项用来辅助主选项完成目的，可以没有，并且这个命令的主选项有且只能有一个，不能既打包又拆包。 主选项123-c：打包文件（打包后的文件一般用.tar结尾） -x： 拆包-t：列出打包文件包含的文件名 辅选项1234-z： 是否用gzip进行解压或压缩-j： 是否用bzip2进行解压或压缩-v：压缩文件过程中显示文件名-f： 指定操作后的文档名（这个参数要求放在最后面，然后直接接文件名） 实例11$tar -zcvf file_or_dir.tar.gz file_or_dir 解释：1.用zip软件压缩file_or_dir文件或目录；（z）2.产生压缩文件;(c)3.显示压缩过程；(v)4.压缩文件名为file_or_dir.tar.gz(f) 实例21$tar -jcvf file_or_dir.tar.bz2 file_or_dir 解释：1.用bzip2软件压缩file_or_dir文件或目录；（j）2.产生压缩文件;(c)3.显示压缩过程；(v)4.压缩文件名为file_or_dir.tar.bz2(f) 实例31$tar -xvf file_or_dir.tar.bz2 解释：1.解压压缩文件；（x）2.显示解压过程；(v)3.压缩文件名为file_or_dir.tar.bz2(f) 实例41$tar -xvf file_or_dir.tar.gz 解释：1.解压压缩文件；（x）2.显示解压过程；(v)3.压缩文件名为file_or_dir.tar.gz(f) 实例51$tar -tvf file_or_dir.tar.gz 解释：1.查看压缩包里包含了那些文件名;(t)2.显示压缩过程；(v)3.压缩文件名为file_or_dir.tar.gz(f) 注：.tar.xz类压缩文件，也可以用tar -xvf进行解压缩，本博主试过。哈哈！希望可以帮到你。]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>压缩和解压</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[tcpdump 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftcpdump%2F</url>
-    <content type="text"><![CDATA[tcpdump命令 待添加。 语法选项]]></content>
+    <title><![CDATA[telnet 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftelnet%2F</url>
+    <content type="text"><![CDATA[telnet命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[telnet 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftelnet%2F</url>
-    <content type="text"><![CDATA[telnet命令 待添加。 语法选项]]></content>
+    <title><![CDATA[tcpdump 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftcpdump%2F</url>
+    <content type="text"><![CDATA[tcpdump命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
@@ -1473,15 +1473,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[traceroute 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftraceroute%2F</url>
-    <content type="text"><![CDATA[traceroute命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>网络管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[tree 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Ftree%2F</url>
     <content type="text"><![CDATA[tree命令 待添加。 语法选项]]></content>
@@ -1491,12 +1482,30 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[traceroute 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftraceroute%2F</url>
+    <content type="text"><![CDATA[traceroute命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>网络管理</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[umask 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fumask%2F</url>
     <content type="text"><![CDATA[umask命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>权限管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[umount 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fumount%2F</url>
+    <content type="text"><![CDATA[umount命令 用来卸载文件系统。 语法 umount [选项] [设备名或挂载点] 选项 目前还没用用到比较常用的参数，等遇见了将进行更新。 实例112$mount /dev/sdb2 /mnt$umount /dev/sdb2 说明：将sdb2设备从挂载点上卸载，若此设备并没有被挂载将报错：umount: /dev/sdb2: not mounted 实例212$mount /dev/sdb2 /mnt$umount /mnt 说明：将挂载在/mnt上的文件系统卸载，若/mnt上并没有挂载任何设备将报错：umount: /mnt: not mounted]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>磁盘管理</category>
       </categories>
   </entry>
   <entry>
@@ -1664,10 +1673,10 @@
   <entry>
     <title><![CDATA[who 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fwho%2F</url>
-    <content type="text"><![CDATA[who命令 待添加。 语法选项]]></content>
+    <content type="text"><![CDATA[who命令 输出当前登录本机的用户信息。 语法who [option] [FILE | ARG1 ARG2] 注：一般并不指定[FILE | ARG1 ARG2] 选项不加选项：显示当前登录的用户名，登录线路（tty），登录时间，备注 -H： 带表头输出 -b： 输出最近一次启动系统的时间 --ips: 输出远程登录的ip地址，而不是主机名 -m： 相当于whoami,即输出当前活动终端用户信息，与stdin相连的。 -q： 输出当前登录本机的所有用户名，和用户数 -r： 输出当前run-level -a: 输出所有信息 常用实例123456$ who -HNAME LINE TIME COMMENThzy tty7 2018-12-24 19:23 (:0)hzy pts/19 2018-12-24 19:31 (tmux(3717).%0)hzy pts/20 2018-12-24 19:31 (tmux(3717).%1)hzy pts/21 2018-12-24 19:45 (tmux(3717).%2) 123$ who -qhzy hzy hzy hzy# users=4 12$ who -rrun-level 5 2018-12-24 19:22 12345678$ who -asystem boot 2018-12-24 19:22run-level 5 2018-12-24 19:22LOGIN tty1 2018-12-24 19:23 1147 id=tty1hzy + tty7 2018-12-24 19:23 01:03 1250 (:0)hzy + pts/19 2018-12-24 19:31 00:54 3717 (tmux(3717).%0)hzy + pts/20 2018-12-24 19:31 . 3717 (tmux(3717).%1)hzy + pts/21 2018-12-24 19:45 00:39 3717 (tmux(3717).%2)]]></content>
       <categories>
         <category>linux常用shell命令</category>
-        <category>关机重启</category>
+        <category>系统管理</category>
       </categories>
   </entry>
   <entry>
@@ -1682,7 +1691,7 @@
   <entry>
     <title><![CDATA[linux常用shell命令分类]]></title>
     <url>%2F2018%2F12%2F05%2FshellCommandCategories%2F</url>
-    <content type="text"><![CDATA[一：说明本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 二：分类1、文件和目录管理（31） 命令名 功能说明 cd pwd mkdir rmdir tree ls touch cp mv rm cat more less head ln diff vimdiff rename stat md5sum paste nl sort uniq seq read echo cut grep awk sed 2、权限管理（7） 命令名 功能说明 chmod chown chgrp umask setfacl chattr lsattr 3、用户管理（7） 命令名 功能说明 useradd passwd userdel groupadd groupdel gpasswd newgrp 4、查找命令（7） 命令名 功能说明 which whereis locate find grep history finger 5、帮助命令（3） 命令名 功能说明 man help info 6、压缩和解压（7） 命令名 功能说明 tar zip unzip gzip gunzip bzip2 bunzip2 7、网络管理（24） 命令名 功能说明 ping ifconfig netstat nslookup dig curl wget traceroute nmap arp telnet tcpdump ab scp ifup ifdown dhclient nc iftop ntpdate ntpd mutt ethtool mii-tool 命令用法 8、系统管理（53） 命令名 功能说明 w who last lastlog finger id ps top pstree free sar uptime jobs lsb_release lsof file chkconfig setup sync su du at crontab date alias unalias chage set unset export env locale declare source dump restore bc nohup lsmod tac dirname basename hostname time clear kill killall pkill modprobe iconv dmidecode ntsysv runlevel 9、关机重启（6） 命令名 功能说明 init who reboot shutdown halt poweroff 10、软件安装与卸载（10） 命令名 功能说明 rpm cpio rpm2cpio ldconfig apt-get apt-cache aptitude ldd sz rz 11、磁盘管理（32） 命令名 功能说明 df fsck mount unmount dumpe2fs fdisk mkfs mke2fs parted quotacheck edquota quotaon quotaoff quota repquota setquota pvcreate pvscan pvdisplay pvremove vgcreate vgscan vgdisplay vgextend vgreduce vgremove lvcreate lvscan lvdisplay lvresize resize2fs lvremove]]></content>
+    <content type="text"><![CDATA[一：说明本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 二：分类1、文件和目录管理（31） 命令名 功能说明 cd pwd mkdir rmdir tree ls touch cp mv rm cat more less head ln diff vimdiff rename stat md5sum paste nl sort uniq seq read echo cut grep awk sed 2、权限管理（7） 命令名 功能说明 chmod chown chgrp umask setfacl chattr lsattr 3、用户管理（7） 命令名 功能说明 useradd passwd userdel groupadd groupdel gpasswd newgrp 4、查找命令（7） 命令名 功能说明 which whereis locate find grep history finger 5、帮助命令（3） 命令名 功能说明 man help info 6、压缩和解压（7） 命令名 功能说明 tar 用来压缩文件，解压缩文件，打包文件 zip unzip gzip gunzip bzip2 bunzip2 7、网络管理（24） 命令名 功能说明 ping ifconfig netstat nslookup dig curl wget traceroute nmap arp telnet tcpdump ab scp ifup ifdown dhclient nc iftop ntpdate ntpd mutt ethtool mii-tool 命令用法 8、系统管理（53） 命令名 功能说明 w who 输出当前登录本机的用户信息 last lastlog finger id ps top pstree free sar uptime jobs lsb_release lsof file chkconfig setup sync su du at crontab date alias unalias chage set unset export env locale declare source dump restore bc nohup lsmod tac dirname basename hostname time clear kill killall pkill modprobe iconv dmidecode ntsysv runlevel 9、关机重启（6） 命令名 功能说明 init reboot shutdown halt poweroff 10、软件安装与卸载（10） 命令名 功能说明 rpm cpio rpm2cpio ldconfig apt-get apt-cache aptitude ldd sz rz 11、磁盘管理（32） 命令名 功能说明 df fsck mount umount 用来卸载文件系统 dumpe2fs fdisk mkfs mke2fs parted quotacheck edquota quotaon quotaoff quota repquota setquota pvcreate pvscan pvdisplay pvremove vgcreate vgscan vgdisplay vgextend vgreduce vgremove lvcreate lvscan lvdisplay lvresize resize2fs lvremove]]></content>
       <categories>
         <category>linux常用shell命令</category>
       </categories>
@@ -1698,7 +1707,7 @@
   <entry>
     <title><![CDATA[月日程规划和打卡记录]]></title>
     <url>%2F2018%2F12%2F02%2FmyWeekPlan%2F</url>
-    <content type="text"><![CDATA[一：说明 本文规划了我的每月周一到周五的日程表，根据时间规划三八定律进行规划，每月一号更新新的日程表，周六周日的日程表在周五当天进行更新，打卡记录见下文。 二：日程表2018年12月3日～2018年12月30日工作日日程表 1 2 3 4 5 6 7 8 9 10 11 12 13 14 星期一 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 马哥学运维 星期二 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 马哥学运维 星期三 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 马哥学运维 星期四 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 马哥学运维 星期五 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 英语语法 博客 博客 周记 马哥学运维 2018年12月3日～2018年12月30日打卡记录表 日期 星期 完成个数 未完成项目 原因 12/3 星期一 14 0 12/4 星期二 14 0 12/5 星期三 13 1 财务自由之路没有阅读,看新闻浪费了时间 12/6 星期四 14 1 单词没有默写，工作时间占据 12/7 星期五 15 2 吉他没有玩太冷了，霍乱时期的爱情没有读，都看老友记了 日期 星期 做了什么 12/8 星期六 读了一本书虫，看了1.5个小时的财务自由之路，新概念英语学了两课,运维网课2小时 12/9 星期日 读了两本书虫，看了30分钟计算机操作系统，写了博客，听了网课 总结：整体周一到周五变现良好，每天都按时起床和睡觉，并且计算机每天两个小时的专业课本阅读是很重要的，也坚持完毕了。值得表扬一下，周六周日天冷但是也干了一些有意义的事，就是熬夜了，早上也睡懒觉了，但是这也无可厚非，毕竟是休息日，周六周日加在一起学习六个小时就可以了，其他的可以干自己想干的事情，但是不能打游戏，尽量健康的生活，适当的锻炼一下，读一些课外书，等等。下一周要开始了，坚持下去！早上起床是关键，不要让任何人看扁你！为了自己的梦想，出发！ 日期 星期 完成个数 未完成项目 原因 12/10 星期一 13 书虫阅读 默写了单词,今天根据总体梦想修改了规划 12/11 星期二 14 0 12/12 星期三 13 计算机操作系统 早上多睡了一个小时 12/13 星期四 12 2 游泳之后没有投入学习 12/14 星期五 10 4 晚上没有学习，而是去买礼物和玩耍了 日期 星期 做了什么 12/15 星期六 去表哥家教电脑了，没有学习 12/16 星期日 除了教电脑，什么都没有学 总结：本周的打卡更新有延迟，有的时候都没有更新，这是很不好的现象，以后不能再这样了。 日期 星期 完成个数 未完成项目 原因 12/17 星期一 10 计算机操作系统,两节博客 早上没有起来 12/18 星期二 11 书虫阅读和理财书 今天早上改变了学习规划，早上的一节课改成去公司学习了，晚上的最后一节课改成马哥的教学了 12/19 星期三 13 早上的两节课没有学 早上没有起床,修改学习计划 12/20 星期四 12 12/21 星期五 10]]></content>
+    <content type="text"><![CDATA[一：说明 本文规划了我的每月周一到周五的日程表，根据时间规划三八定律进行规划，每月一号更新新的日程表，周六周日的日程表在周五当天进行更新，打卡记录见下文。 二：日程表2018年12月3日～2018年12月30日工作日日程表 1 2 3 4 5 6 7 8 9 10 11 12 13 14 星期一 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 马哥学运维 星期二 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 马哥学运维 星期三 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 书虫阅读 博客 博客 财务自由之路 马哥学运维 星期四 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 游泳 游泳 书虫阅读 财务自由之路 马哥学运维 星期五 计算机组成原理 书虫听力 工作1 工作2 单词40+新闻10 工作3 工作4 工作5 工作6 英语语法 博客 博客 周记 马哥学运维 2018年12月3日～2018年12月30日打卡记录表 日期 星期 完成个数 未完成项目 原因 12/3 星期一 14 0 12/4 星期二 14 0 12/5 星期三 13 1 财务自由之路没有阅读,看新闻浪费了时间 12/6 星期四 14 1 单词没有默写，工作时间占据 12/7 星期五 15 2 吉他没有玩太冷了，霍乱时期的爱情没有读，都看老友记了 日期 星期 做了什么 12/8 星期六 读了一本书虫，看了1.5个小时的财务自由之路，新概念英语学了两课,运维网课2小时 12/9 星期日 读了两本书虫，看了30分钟计算机操作系统，写了博客，听了网课 总结：整体周一到周五变现良好，每天都按时起床和睡觉，并且计算机每天两个小时的专业课本阅读是很重要的，也坚持完毕了。值得表扬一下，周六周日天冷但是也干了一些有意义的事，就是熬夜了，早上也睡懒觉了，但是这也无可厚非，毕竟是休息日，周六周日加在一起学习六个小时就可以了，其他的可以干自己想干的事情，但是不能打游戏，尽量健康的生活，适当的锻炼一下，读一些课外书，等等。下一周要开始了，坚持下去！早上起床是关键，不要让任何人看扁你！为了自己的梦想，出发！ 日期 星期 完成个数 未完成项目 原因 12/10 星期一 13 书虫阅读 默写了单词,今天根据总体梦想修改了规划 12/11 星期二 14 0 12/12 星期三 13 计算机操作系统 早上多睡了一个小时 12/13 星期四 12 2 游泳之后没有投入学习 12/14 星期五 10 4 晚上没有学习，而是去买礼物和玩耍了 日期 星期 做了什么 12/15 星期六 去表哥家教电脑了，没有学习 12/16 星期日 除了教电脑，什么都没有学 总结：本周的打卡更新有延迟，有的时候都没有更新，这是很不好的现象，以后不能再这样了。 日期 星期 完成个数 未完成项目 原因 12/17 星期一 10 计算机操作系统,两节博客 早上没有起来 12/18 星期二 11 书虫阅读和理财书 今天早上改变了学习规划，早上的一节课改成去公司学习了，晚上的最后一节课改成马哥的教学了 12/19 星期三 13 早上的两节课没有学 早上没有起床,修改学习计划 12/20 星期四 12 忘记打卡 12/21 星期五 10 忘记打卡 日期 星期 做了什么 12/22 星期六 看了两本书虫，默写了一会单词，洗衣服，剪头发，听力，看了财务自由 12/23 星期日 一直在看老友记 总结：每次写博客的时候一定要写博客，并且更新打卡记录，每天早起真的很重要，不早起，就浪费了2个小时，并且没有做好上班的准备，很被动。 日期 星期 完成个数 未完成项目 原因 12/24 星期一 13 计算机原理 早上没有起来 12/25 星期二 12/26 星期三 12/27 星期四 12/28 星期五 12/29 星期六]]></content>
       <categories>
         <category>目标与规划</category>
       </categories>
@@ -1725,14 +1734,6 @@
     <content type="text"><![CDATA[一：说明 初次接触tmux工具，想了解tmux的工作原理的朋友们，可以看一下下面的链接，讲的非常好，重点在于理解会话(session)，窗口(window)，窗格(pane)的概念。linux终端复用详解只是想查看关于tmux一些操作的快捷键，或者命令，请看本文第二部分的操作总结。 二：操作总结会话操作(session operation) 操作名 命令/快捷键 说明 新建会话 tmux new -s sessionName 其中-s为session的首字母。 退出会话 ctrl+b d ctrl+b为tmux快捷键的默认leader, d为detach的首字母，意为脱离。 查看会话列表（终端环境） tmux ls 会列出系统中所有tmux创建的会话，第一列为会话名，第二列为会话包含几个窗口。 查看会话列表（会话环境） ctrl+b s 在会话环境下列出会话列表，并且可以使用方向键进行选择，然后按Enter键，进行切换不同的会话。 从终端环境进入会话 tmux a -t sessionName 其中a为attach（依附）的首字母，-t为指定已经存在的会话 销毁会话（终端环境） tmux kill-session -t sessionName 销毁已经存在的会话，-t后指定会话名 销毁会话（会话环境） step1) ctrl+b : step2) 输入kill-session -t sessionName 先用ctrl+b :打开输入面板，然后输入kill-session -t sessionName; 注意：没有tumux哦！ 重命名会话（终端环境） tmux rename -t old_session_name new_session_name 终端环境下重命名会话名 重命名会话（会话环境） ctrl+b $ 在会话环境下，重命名当前会话，注意，是会话，不是窗口，重命名窗口看下面窗口操作。 窗口操作(window operation) 操作名 命令/快捷键 说明 创建window ctrl+b c 创建一个新的window,创建出来的窗口由窗口序号+窗口名字显示，其中\表示当前操作的窗口 重命名window ctrl+b , 为当前所在的window重命名 切换window ctrl+b n/p/w/0 n(next):切换到下一个window; p(previous):切换到上一个window; 0(number):切换到0号窗口; w(windows):列出当前会话的所有的窗口，这时候可以使用上下键进行切换。 关闭window ctrl+b &amp; 关闭当前window，会提示是否要关闭，输入即可。 实现鼠标滚动历史输出 ctrl+b [ 默认情况输出不能往上翻滚，使用ctrl+b [即可往上翻了，退出用ctrl+c即可。 窗格操作(pane operation) 操作名 命令/快捷键 说明 垂直分屏 ctrl+b % 把当前window垂直分为两个 水平分屏 ctrl+b “ 把当前window水平分为两个 切换窗格 ctrl+b Up/Down/Left/Right 切换窗格 删除窗格 ctrl+b x 关闭当前使用的窗格，关闭之前会提示，输入y即可]]></content>
       <categories>
         <category>计算机开发工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[unmount 命令用法]]></title>
-    <url>%2F2018%2F11%2F03%2Funmount%2F</url>
-    <content type="text"><![CDATA[umount命令 用来卸载文件系统。 语法 umount [选项] [设备名或挂载点] 选项 目前还没用用到比较常用的参数，等遇见了将进行更新。 实例1$mount /dev/sdb2 /mnt $umount /dev/sdb2 说明：将sdb2设备从挂载点上卸载，若此设备并没有 被挂载将报错：umount: /dev/sdb2: not mounted 实例2$mount /dev/sdb2 /mnt $umount /mnt 说明：将挂载在/mnt上的文件系统卸载， 若/mnt上并没有挂载任何 设备将报错：umount: /mnt: not mounted]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
       </categories>
   </entry>
 </search>

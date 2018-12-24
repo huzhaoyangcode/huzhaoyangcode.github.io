@@ -115,17 +115,17 @@
 
 
 
-  <meta name="description" content="who命令 待添加。">
+  <meta name="description" content="who命令 输出当前登录本机的用户信息。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="who 命令用法">
 <meta property="og:url" content="www.huzhaoyang.com/2018/12/05/who/index.html">
 <meta property="og:site_name" content="古杨的个人博客">
-<meta property="og:description" content="who命令 待添加。">
+<meta property="og:description" content="who命令 输出当前登录本机的用户信息。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-05T13:56:48.914Z">
+<meta property="og:updated_time" content="2018-12-24T13:17:35.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="who 命令用法">
-<meta name="twitter:description" content="who命令 待添加。">
+<meta name="twitter:description" content="who命令 输出当前登录本机的用户信息。">
 
 
 
@@ -415,7 +415,7 @@
                   ，
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/linux常用shell命令/关机重启/" itemprop="url" rel="index"><span itemprop="name">关机重启</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/linux常用shell命令/系统管理/" itemprop="url" rel="index"><span itemprop="name">系统管理</span></a></span>
 
                 
                 
@@ -456,8 +456,25 @@
       
 
       
-        <p><strong>who命令</strong> 待添加。<br><a id="more"></a> </p>
-<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a><strong>语法</strong></h4><h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a><strong>选项</strong></h4>
+        <p><strong>who命令</strong> 输出当前登录本机的用户信息。<br><a id="more"></a> </p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><pre><code>who [option] [FILE | ARG1 ARG2]
+</code></pre><p>注：一般并不指定[FILE | ARG1 ARG2]</p>
+<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><pre><code>不加选项：显示当前登录的用户名，登录线路（tty），登录时间，备注
+-H：   带表头输出
+-b：   输出最近一次启动系统的时间
+--ips: 输出远程登录的ip地址，而不是主机名
+-m：   相当于whoami,即输出当前活动终端用户信息，与stdin相连的。
+-q：   输出当前登录本机的所有用户名，和用户数
+-r：   输出当前run-level
+-a:    输出所有信息
+</code></pre><h2 id="常用实例"><a href="#常用实例" class="headerlink" title="常用实例"></a>常用实例</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ who -H</span><br><span class="line">NAME     LINE         TIME             COMMENT</span><br><span class="line">hzy      tty7         2018-12-24 19:23 (:0)</span><br><span class="line">hzy      pts/19       2018-12-24 19:31 (tmux(3717).%0)</span><br><span class="line">hzy      pts/20       2018-12-24 19:31 (tmux(3717).%1)</span><br><span class="line">hzy      pts/21       2018-12-24 19:45 (tmux(3717).%2)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ who -q</span><br><span class="line">hzy hzy hzy hzy</span><br><span class="line"># users=4</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ who -r</span><br><span class="line">run-level 5  2018-12-24 19:22</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ who -a</span><br><span class="line">system boot  2018-12-24 19:22</span><br><span class="line">run-level 5  2018-12-24 19:22</span><br><span class="line">LOGIN      tty1         2018-12-24 19:23              1147 id=tty1</span><br><span class="line">hzy      + tty7         2018-12-24 19:23 01:03        1250 (:0)</span><br><span class="line">hzy      + pts/19       2018-12-24 19:31 00:54        3717 (tmux(3717).%0)</span><br><span class="line">hzy      + pts/20       2018-12-24 19:31   .          3717 (tmux(3717).%1)</span><br><span class="line">hzy      + pts/21       2018-12-24 19:45 00:39        3717 (tmux(3717).%2)</span><br></pre></td></tr></table></figure>
+</code></pre>
       
     </div>
 
@@ -722,7 +739,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选项"><span class="nav-number">2.</span> <span class="nav-text">选项</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选项"><span class="nav-number">2.</span> <span class="nav-text">选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用实例"><span class="nav-number">3.</span> <span class="nav-text">常用实例</span></a></li></ol></div>
             
 
           </div>
