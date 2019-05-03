@@ -1,6 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C,C++ 常用代码分类]]></title>
+    <url>%2F2019%2F04%2F17%2FcommanCodeContent%2F</url>
+    <content type="text"><![CDATA[分类名 分类说明 fileReadAndWrite 文件读写]]></content>
+      <categories>
+        <category>专题教程</category>
+        <category>常用代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[文件读写代码块]]></title>
+    <url>%2F2019%2F04%2F17%2FfileReadAndWrite%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>专题教程</category>
+        <category>常用代码</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[diff 命令用法]]></title>
+    <url>%2F2019%2F03%2F21%2Fdiff%2F</url>
+    <content type="text"><![CDATA[diff命令: compare files line by line 按行对比文件。 语法: diff [OPTION]… FILES常用选项:无：不加参数时候，默认以normal格式显示对比结果。 -y: 以并排形式列出对比结果。 -c: 以上下文的方式输出对比结果。 实例：一：normal形式对比$ diff sort.txt sort2.txt 1c1 &lt; 1 9 3 a --- &gt; 1 2 3 a 4c4 &lt; 1 3 35 6 --- &gt; 1 3 45 6 5a6 &gt; 0 3 46 u 说明：nomal 格式显示对比结果，该格式有三种情况：c:change, a: add, d:deleate 所以：1c1：第一行有改动，紧接着列出的是第一个文件的第一行，和第二个文件的第一行，用---隔开。 5a6：说明第二个文件比第一个文件多了一行，多出的是第二个文件的第六行. 二：并排形式对比$ diff sort.txt sort2.txt -y 1 9 3 a | 1 2 3 a 2 4 5 h 2 4 5 h 2 4 7 h 2 4 7 h 1 3 35 6 | 1 3 45 6 1224 4 5 j 1224 4 5 j &gt; 0 3 46 u j k d 8 j k d 8 j d 8 0 j d 8 0 $ diff sort2.txt sort.txt -y 1 2 3 a | 1 9 3 a 2 4 5 h 2 4 5 h 2 4 7 h 2 4 7 h 1 3 45 6 | 1 3 35 6 1224 4 5 j 1224 4 5 j 0 3 46 u &lt; j k d 8 j k d 8 j d 8 0 j d 8 0 说明：-y, 参数指定以并排的方式显示文件不同。 |：代表前后文件有改动。 &gt;: 代表后面文件比前面文件多一行。 &lt;:代表后面文件比前面文件少一行。 三：上下文形式对比$ diff sort2.txt sort.txt -c *** sort2.txt 2019-03-21 11:08:49.822511232 +0800 --- sort.txt 2019-03-21 11:01:08.406497544 +0800 *************** *** 1,8 **** ! 1 2 3 a 2 4 5 h 2 4 7 h ! 1 3 45 6 1224 4 5 j - 0 3 46 u j k d 8 j d 8 0 --- 1,7 ---- ! 1 9 3 a 2 4 5 h 2 4 7 h ! 1 3 35 6 1224 4 5 j j k d 8 j d 8 0 $ diff sort.txt sort2.txt -c *** sort.txt 2019-03-21 11:01:08.406497544 +0800 --- sort2.txt 2019-03-21 11:08:49.822511232 +0800 *************** *** 1,7 **** ! 1 9 3 a 2 4 5 h 2 4 7 h ! 1 3 35 6 1224 4 5 j j k d 8 j d 8 0 --- 1,8 ---- ! 1 2 3 a 2 4 5 h 2 4 7 h ! 1 3 45 6 1224 4 5 j + 0 3 46 u j k d 8 j d 8 0 说明：以上下文方式输出对比结果。先输出两个文件的信息，然后是不同的标记。 !: 不同 -:后者比前者少一行 +:后者比前者多一行 四：文件夹对比$ diff diffDir1/ diffDir2 diff diffDir1/sort2.txt diffDir2/sort2.txt 1c1 &lt; 1 9 3 a --- &gt; 1 2 3 a 4c4 &lt; 1 3 35 6 --- &gt; 1 3 45 6 5a6 &gt; 0 3 46 u Only in diffDir1/: sort.txt $ diff diffDir1/ diffDir2 -y diff -y diffDir1/sort2.txt diffDir2/sort2.txt 1 9 3 a | 1 2 3 a 2 4 5 h 2 4 5 h 2 4 7 h 2 4 7 h 1 3 35 6 | 1 3 45 6 1224 4 5 j 1224 4 5 j &gt; 0 3 46 u j k d 8 j k d 8 j d 8 0 j d 8 0 Only in diffDir1/: sort.txt 说明：文件夹对比时候，diff会去对比两个文件夹中相同名字的文件，并显示不同，以及只存在一个文件夹里的文件。 五：对比文件并生成补丁$ cat diffTestfile1.txt Today is a rainy . $ cat diffTestfile2.txt Today is a sunny . $ diff diffTestfile1.txt diffTestfile2.txt &gt;diffPatchfil.txt $ cat diffPatchfil.txt 4c4 &lt; rainy --- &gt; sunny 说明：所谓生成补丁文件，就是把前后两个版本的文件对比一下，然后输入到一个文件中，这个就是补丁文件。 六：打补丁$ patch diffTestfile1.txt diffPatchfil.txt patching file diffTestfile1.txt $ cat diffTestfile1.txt Today is a sunny . 说明：所谓打补丁，就是把补丁文件应用到没有更新的文件上， 结果diffTestfile1.txt 变成了diffTestfile2.txt文件。 七：对比二进制文件$ diff test1 test2 Binary files test1 and test2 differ 说明：对比二进制文件时，相同不会有任何输出，不同时才会有输出。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[nl 命令用法]]></title>
+    <url>%2F2019%2F03%2F20%2Fnl%2F</url>
+    <content type="text"><![CDATA[nl命令: number lines of files 统计文件行数。 语法: nl [OPTION]… [FILE]…常用选项:-b: 指定输出行号的行类型。 a: 为所有的行加行号，包括空白行。 t: 只为非空白行加行号。 -n: 设置插入行号的位置。 ln: 在左边插入行号 rn: 在右边插入行号 rz: 在右边插入行号并且行号以0开头 -w: 设置行号占的位数。 实例：$ nl nlTest.txt 1 adjdj 2 adjdj 3 adjdj 4 adjdj 5 adjdj 说明：列出文件nlTest.txt的内容并且为非空白行加上行号。 $ nl -b a nlTest.txt 1 adjdj 2 adjdj 3 adjdj 4 5 adjdj 6 adjdj 说明：列出文件nlTest.txt的内容并且为所有行都加上行号。 //在左边插入 $ nl -n ln nlTest.txt 1 adjdj 2 adjdj 3 adjdj 4 adjdj 5 adjdj //在右边插入 $ nl -n rn nlTest.txt 1 adjdj 2 adjdj 3 adjdj 4 adjdj 5 adjdj //在右边插入且把其他位都补零 $ nl -n rz nlTest.txt 000001 adjdj 000002 adjdj 000003 adjdj 000004 adjdj 000005 adjdj //在右边插入，补充零，并且限制行号宽度为3 $ nl -n rz -w 3 nlTest.txt 001 adjdj 002 adjdj 003 adjdj 004 adjdj 005 adjdj 说明：所谓的左右，是相对于整体的行号位数决定的，000001是右边 100000则是左边，只是零省略的而已。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tr 命令用法]]></title>
+    <url>%2F2019%2F03%2F20%2Ftr%2F</url>
+    <content type="text"><![CDATA[tr命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[wc 命令用法]]></title>
+    <url>%2F2019%2F03%2F20%2Fwc%2F</url>
+    <content type="text"><![CDATA[wc命令: print newline, word, and byte counts for each file 统计文件的行数，字数，字节数。 语法: wc [OPTION]… [FILE]…常用选项:无：行数，单词数，字节数，文件名。 -l：只显示行数 -w:单词数 -c:字节数 -m:字符数 -L:最长的一行包含多少个字符 实例：$ cat wcTest.txt This is a wc test file. Thanks a lot for your reading. $ wc wcTest.txt 5 12 58 wcTest.txt 说明：可见wcTest.txt 文件一共有5行，12个单词，58个字符。wc 统计时，空白行也算一行， 空白字符隔开的是单词。字符数统计包括空白字符。 //单独输出行数 $ wc -l wcTest.txt 5 wcTest.txt //单独输出文件单词数 $ wc -w wcTest.txt 12 wcTest.txt //修改文件,包含一个中文字 $ cat wcTest.txt This is a wc test file. Thanks a lot for your reading. 中 //单独输出文件字节数 $ wc -c wcTest.txt 62 wcTest.txt //单独输出字符数 $ wc -m wcTest.txt 60 wcTest.txt $ ls -l wcTest.txt -rw-rw-r-- 1 hu hu 62 三月 20 09:55 wcTest.txt 说明：由上面的例子可知，-c 输出文件字节数，和-l 输出的字节数大小一样，而字符数不一定等于字节数。 中文字符在本系统中占三个字节。 $ wc -L wcTest.txt 30 wcTest.txt $ cat wcTest.txt This $ wc wcTest.txt 1 1 5 wcTest.txt $ wc -L wcTest.txt 4 wcTest.txt $ cat wcTest.txt 中 $ wc wcTest.txt 1 1 4 wcTest.txt $ wc -L wcTest.txt 2 wcTest.txt 说明：文件最长行的显示宽度，不等于字符数，也不等于字节数，经测试，在本系统：中文字符显示宽度为2。 空白字符不 计入显示宽度。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cut 命令用法]]></title>
+    <url>%2F2019%2F03%2F19%2Fcut%2F</url>
+    <content type="text"><![CDATA[cut命令: remove sections from each line of files 移除文件中每一行的某个部分。 语法: cut [OPTION]… [FILE]..常用选项:cut 命令并不直接操作于源文件，而是操作输出缓冲。 -d：指定字段分隔符，默认是空格 -d: -f: filed 指定要显示的字段列表 eg:-f1 显示第一个字段 -f1,3 显示一三字段 -f1-3显示一到三字段， 字段从左到右 依次增大，从1开始。 实例： $ cut -d &quot;:&quot; -f1 /etc/passwd root daemon bin sys sync games man lp mail news uucp proxy www-data backup list ... 说明：以 “:” 作为分隔符，切/etc/passwd文件，并且输出第1个区域。源文件并不会受到影响。 $ cut -d &quot;:&quot; -f1-3 /etc/passwd root:x:0 daemon:x:1 bin:x:2 sys:x:3 sync:x:4 games:x:5 man:x:6 lp:x:7 mail:x:8 news:x:9 uucp:x:10 proxy:x:13 说明：以 “:” 作为分隔符，切/etc/passwd文件，并且输出前3个区域。源文件并不会受到影响。 $ cut -d &quot;:&quot; -f1,3 /etc/passwd root:0 daemon:1 bin:2 sys:3 sync:4 games:5 man:6 lp:7 mail:8 说明：以 “:” 作为分隔符，切/etc/passwd文件，并且输出1区域和三区域。源文件并不会受到影响。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[sort 命令用法]]></title>
+    <url>%2F2019%2F03%2F19%2Fsort%2F</url>
+    <content type="text"><![CDATA[sort命令: sort lines of text files 排序文本文件行 语法: sort [OPTION]… [FILE]..常用选项:排序输出，默认根据字符在ASCII码中的次序升序排序 -n:按照数值的大小进行排序。 -r:reverse 反向排序输出。 -t:指定字段分隔符 -k:指定以哪个字段排序 eg: sort -t: -k3 -n /etc/passwd 指定分割符号为： 第三个字段为比较字段， -n 为数值比较。 -u:uniq 排序后相同的行只显示一次。 -f:忽略字符大小写 实例：$ cat sort.txt 1 2 3 a 2 4 5 h 2 4 7 h 1 3 45 6 1224 4 5 j 0 3 46 u j k d 8 j d 8 0 //默认根据字符在ASCII码中的次序升序排序, 如果第一个字符相等则比较第二个字符，直到分出大小。 $ sort sort.txt 0 3 46 u 1224 4 5 j 1 2 3 a 1 3 45 6 2 4 5 h 2 4 7 h j d 8 0 j k d 8 // -n 选项按照数值进行排序 $ sort -n sort.txt 0 3 46 u j d 8 0 j k d 8 1 2 3 a 1 3 45 6 2 4 5 h 2 4 7 h 1224 4 5 j // -r 排序结果反方向输出 $ sort -rn sort.txt 1224 4 5 j 2 4 7 h 2 4 5 h 1 3 45 6 1 2 3 a j k d 8 j d 8 0 0 3 46 u // -t 指定空格为列分隔符，以第2列的数值进行排序 $ sort -t &quot; &quot; -k2 sort.txt 1 2 3 a 1 3 45 6 0 3 46 u 2 4 5 h 1224 4 5 j 2 4 7 h j d 8 0 j k d 8 $ cat sort2.txt 1 0 3 4 5 5 6 8 $ sort sort2.txt 0 1 3 4 5 5 6 8 $ sort -u sort2.txt 0 1 3 4 5 6 8 说明：sort -u 如果相邻行相同则只输出一行。而如果相同行不相邻，则不会只输出一行。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tail 命令用法]]></title>
+    <url>%2F2019%2F03%2F19%2Ftail%2F</url>
+    <content type="text"><![CDATA[tail命令: output the last part of files 输出文件的后部分。 语法: tail [OPTION]… [FILE]..常用选项:-n : 后跟数字，表示输出文件的后几行。不加-n ，默认输出文件的后10行。 -f : 查看文件最后部分并不退出，等更新就显示. 实例： $ tail -n 1 tail.md hjkhkjh 说明：不加-n 选项默认会输出文件的后10行。加-n 选项会输出文件后指定数字行。 若加-f 选项会事实更新文件的尾部，有文件写入文件尾部，则更新，对监控日志很有帮助。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[du 命令用法]]></title>
+    <url>%2F2019%2F03%2F18%2Fdu%2F</url>
+    <content type="text"><![CDATA[du命令: estimate file space usage 评估文件空间用量。 语法:du [OPTION]… [FILE]… du [OPTION]… –files0-from=F 常用选项：计算文件使用的空间大小,如果对象是目录，则递归显示所有的目录的大小，但不显示文件。是磁盘使用空间，而不是实际文件大小内容大小。 -0:不再一行一个文件，都放在一行输出 -a:不止计算输出目录，还计算输出文件的大小 -c: 附加输出一个总的大小 -s: 只输出一个总的大小 -d: eg:d0 d1 等 输出第几层的目录。d0 相当于-s参数。 -h: human-readable 自动单位换算 实例： $ ls -l du.md -rw-rw-r-- 1 hu hu 182 一月 14 14:35 du.md $ du -h du.md 4.0K du.md 说明：文件实际大小是182 bytes， 而 du 计算的大小为4k, 所以du计算的的是系统为该文件分配的磁盘空间， 而不是文件的实际大小。 $ du du.md sort.md stat.md 4 du.md 4 sort.md 4 stat.md $ du -c du.md sort.md stat.md 4 du.md 4 sort.md 4 stat.md 12 total 说明：-c选项，附加输出一个总大小。 $ du -s du.md sort.md stat.md 4 du.md 4 sort.md 4 stat.md $ tree hello/ hello/ ├── guyang └── hhh.c $ du hello/ 4 hello/guyang 12 hello/ $ du -s hello/ 12 hello/ $ du -a hello/ 4 hello/guyang 4 hello/hhh.c 0 hello/.hidefile 12 hello/ $ du -0 hello/ 4 hello/guyang 12 hello/hu $ du -d0 hello/ 12 hello/ $ du -d1 hello/ 4 hello/guyang 12 hello/ 说明：-s 选项，只输出每一项的总值。 du 对于目录时， 输出的是目录中包含文件和目录本身所占的磁盘空间， 并会递归输出目录中所有目录的大小，但是不会输出目录中的文件。 -a则是输出所有文件，不只是目录中的目录，还有目录中的文件，并且也是递归的。 -0 不再每一行输出一个文件，而是输出到一行中。 -d[0,1..] 则指定输出到的层数。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[stat 命令用法]]></title>
+    <url>%2F2019%2F03%2F18%2Fstat%2F</url>
+    <content type="text"><![CDATA[stat命令: display file or file system status 显示文件或文件系统的状态。 语法: stat [OPTION]… FILE…常用选项：无 ：无选项的时候，会输出文件的状态信息。 -f : 后面跟文件系统，会输出文件系统的状态信息。 实例： $ stat stat.md `File: &apos;stat.md&apos; Size: 195 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4857563 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-03-18 09:28:09.314642748 +0800 Modify: 2019-01-14 14:35:37.804254379 +0800 Change: 2019-02-15 10:50:23.098052651 +0800 Birth: - 说明：查看文件的状态信息，文件的三个时间戳，文件的类型，链接数，inode， 权限， 属组，属主，大小，占的块数。 $ stat /dev/tty File: &apos;/dev/tty&apos; Size: 0 Blocks: 0 IO Block: 4096 character special file Device: 6h/6d Inode: 33 Links: 1 Device type: 5,0 Access: (0666/crw-rw-rw-) Uid: ( 0/ root) Gid: ( 5/ tty) Access: 2019-03-18 09:48:58.579713236 +0800 Modify: 2019-03-15 17:12:20.579713236 +0800 Change: 2019-02-15 14:23:56.579713236 +0800 Birth: - 说明：字符设备状态信息查看。 $ stat -f /dev/sda2 File: &quot;/dev/sda2&quot; ID: 0 Namelen: 255 Type: tmpfs Block size: 4096 Fundamental block size: 4096 Blocks: Total: 1981353 Free: 1981353 Available: 1981353 Inodes: Total: 1981353 Free: 1980805 说明：文件系统信息查看。把/dev/sda2看作文件系统，而不是块设备文件，进行查看状态信息。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[whatis 命令用法]]></title>
+    <url>%2F2019%2F03%2F18%2Fwhatis%2F</url>
+    <content type="text"><![CDATA[whatis命令: display one-line manual page descriptions 输出man手册中的一行。 语法: whatis name常用选项：-M manpath 指定name搜索的路径，默认whatis 命令会在$MANPATH环境变量中搜索name, 然后显示 man page 中的关于此命令的第一行。如果MANPAHT 是空的，whatis 命令会根据PATH环境变量 决定搜索的路径。 实例： $ whatis gst-launch-1.0 gst-launch-1.0 (1) - build and run a GStreamer pipeline $ whatis whatis whatis (1) - display one-line manual page descriptions $ whatis printf printf (1) - format and print data printf (3) - formatted output conversion $ whatis scanf scanf (3) - input format conversion 说明：whatis 命令输出与name相关的函数，命令的man page的说明行。等价于使用 man -f 命令.]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>帮助命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[whereis 命令用法]]></title>
+    <url>%2F2019%2F03%2F18%2Fwhereis%2F</url>
+    <content type="text"><![CDATA[whereis命令: locate the binary, source, and manual page files for a command 定位命令，文件的位置. 语法: whereis [options] [-BMS directory… -f] name…常用选项：-b: 搜索二进制文件 -m: 搜索man 手册文件 -s: 搜索源代码文件 -B: 指定搜索二进制文件的路径，后跟文件夹列表，用空白字符隔开。 -M: 指定搜索man手册文件的路径，后跟文件夹列表，用空白字符隔开。 -S: 指定搜索资源文件的路径，后跟文件夹列表，用空白字符隔开。 -f: 在指定-B, -M, -S选项时候，用来区分文件夹列表和name，用来分割的，-f后面跟name -l:列出有效的搜索路径 whereis 和 find 命令区别:linux会把系统上的所有文件名放在一个数据库中，whereis 是查询这个数据库来定位文件的， 而find命令则是通过遍历磁盘的方式来查找名字，所以whereis 效率比较高。 但是这个数据库 更新频率比较低，所以并不会查到我们刚刚增加的文件，或者会查到我们刚刚删除的文件。 实例： $ whereis ls ls: /bin/ls /usr/share/man/man1/ls.1.gz $ whereis -b ls ls: /bin/ls $ whereis -m ls ls: /usr/share/man/man1/ls.1.gz $ whereis -s ls ls: 说明: whereis 可以分开检索的种类，没有相关的文件，则输出空。 $ whereis -b -B . -f man man: /home/hu/myGitHub/blogsource/_posts/man.md 说明：-B:指定搜索路径，-b,指定only 选项， -f 指定name。 $ whereis -l bin: /usr/bin bin: /usr/sbin bin: /usr/lib bin: /bin bin: /sbin man: /usr/share/man/de.UTF-8 man: /usr/share/man/de man: /usr/share/man/man7 man: /usr/share/man/it.ISO8859-1 man: /usr/share/man/pt_BR man: /usr/share/info src: /usr/src/linux-headers-4.15.0-45 src: /usr/src/linux-headers-4.15.0-43 src: /usr/src/linux-headers-4.15.0-46 说明：列出whereis程序搜索的路径。路径分为三类bin,man,src三个路径。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>查找命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[linux常用shell命令分类]]></title>
+    <url>%2F2019%2F03%2F18%2FshellCommandCategories%2F</url>
+    <content type="text"><![CDATA[一：说明本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 二：分类1、文件和目录管理（31） 命令名 功能说明 cd change directory(改变工作目录) pwd print working directory(输出工作目录) mkdir make directories(创建空文件夹) rmdir remove empty directories(移除空目录) tree list contents of directories in a tree-like format(以倒树的形式列出文件夹中的内容) ls list directory contents(列出目录内容) touch change file timestamps (修改文件时间戳) cp copy files and directories(拷贝文件和目录) mv move (rename) files (移动或重命名文件) rm remove files or directories (删除文件或目录) cat concatenate files and print on the standard output(连结并输出文件到标准输出) more file perusal filter for crt viewing. (文本文件阅读器) less opposite of more.(文本文件阅读器,类似于more) head output the first part of files. （输出文件的前部） tail output the last part of files. (输出文件的后部分) ln make links between files. （在文件之间创建链接） diff compare files line by line. (按行对比文件) vimdiff rename stat display file or file system status (显示文件或文件系统的状态) md5sum paste tr nl number lines of files (统计文件行数) wc print newline, word, and byte counts for each file (统计文件的行数，字数，字节数) sort sort lines of text files （排序文本文件行） uniq seq read echo display a line of text. (输出一行文本文字) cut remove sections from each line of files (移除文件中每一行的某个部分) grep awk sed 2、权限管理（7） 命令名 功能说明 chmod chown chgrp umask setfacl chattr lsattr 3、用户管理（7） 命令名 功能说明 useradd passwd userdel groupadd groupdel gpasswd newgrp 4、查找命令（7） 命令名 功能说明 which whereis locate the binary, source, and manual page files for a command (定位命令，文件的位置.) locate find grep history finger 5、帮助命令（3） 命令名 功能说明 man help whatis display one-line manual page descriptions (输出man手册中的一行) info 6、压缩和解压（7） 命令名 功能说明 tar The GNU version of the tar archiving utility(GNU版本的归档管理器) zip unzip gzip gunzip bzip2 bunzip2 7、网络管理（24） 命令名 功能说明 ping ifconfig netstat nslookup dig curl wget traceroute nmap arp telnet tcpdump ab scp ifup ifdown dhclient nc iftop ntpdate ntpd mutt ethtool mii-tool 命令用法 8、系统管理（53） 命令名 功能说明 w who show who is logged on(输出当前登录本机的用户信息) last lastlog finger id ps top pstree free sar uptime jobs lsb_release lsof file determine file type （判定文件的类型） type Display information about command type(输出命令类型信息) chkconfig setup sync su du estimate file space usage (评估文件空间用量) at crontab date print or set the system date and time.(输出或设置系统日期和时间) hwclock read or set the hardware clock. (读或设置硬件时钟) alias unalias chage set unset export env locale declare source dump restore bc nohup lsmod tac dirname basename hostname time clear kill killall pkill modprobe iconv dmidecode ntsysv runlevel 9、关机重启（6） 命令名 功能说明 init reboot shutdown halt poweroff 10、软件安装与卸载（10） 命令名 功能说明 rpm cpio rpm2cpio ldconfig apt-get apt-cache aptitude ldd sz rz 11、磁盘管理（32） 命令名 功能说明 df fsck mount umount unmount file systems(卸载文件系统) dumpe2fs fdisk mkfs mke2fs parted quotacheck edquota quotaon quotaoff quota repquota setquota pvcreate pvscan pvdisplay pvremove vgcreate vgscan vgdisplay vgextend vgreduce vgremove lvcreate lvscan lvdisplay lvresize resize2fs lvremove]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[date 命令用法]]></title>
+    <url>%2F2019%2F03%2F14%2Fdate%2F</url>
+    <content type="text"><![CDATA[date命令: print or set the system date and time. 输出或设置系统日期和时间。 语法:date [OPTION]… [+FORMAT] date [-u|–utc|–universal] [MMDDhhmm[[CC]YY][.ss]] 语法说明:date 的语法分为两种： 第一行是用来显示时间的语法。 第二行是用来设置时间的语法。 常用选项:-s: --set=STRING 通过字符串的方式设置时间。 -d: --date=STRING 通过字符串的描述来显示时间和日期。 时间输出格式控制：%% :输出% %n : 下一行 %t : 跳格 %H : 小时(00..23) %I : 小时(01..12) %k : 小时(0..23) %l : 小时(1..12) %M : 分钟(00..59) %p : 显示本地 AM 或 PM %r : 直接显示时间 (12 小时制，格式为 hh:mm:ss [AP]M) %s : 从 1970 年 1 月 1 日 00:00:00 UTC 到目前为止的秒数 %S : 秒(00..61) %T : 直接显示时间 (24 小时制) %X : 相当于 %H:%M:%S %Z : 显示时区 %a : 星期几 (Sun..Sat) %A : 星期几 (Sunday..Saturday) %b : 月份 (Jan..Dec) %B : 月份 (January..December) %c : 直接显示日期与时间 %d : 日 (01..31) %D : 直接显示日期 (mm/dd/yy) %h : 同 %b %j : 一年中的第几天 (001..366) %m : 月份 (01..12) %U : 一年中的第几周 (00..53) (以 Sunday 为一周的第一天的情形) %w : 一周中的第几天 (0..6) %W : 一年中的第几周 (00..53) (以 Monday 为一周的第一天的情形) %x : 直接显示日期 (mm/dd/yy) %y : 年份的最后两位数字 (00.99) %Y : 完整年份 (0000..9999) 时间输出实例： $ date 星期四 三月 14 10:46:23 CST 2019 $ date +%H:%M:%S 10:53:37 $ date +%T 10:57:39 $ date +%X 10时55分20秒 CST $ date +%x 2019年03月14日 $ date +%c 2019年03月14日 10时54分23秒 CST $ date +%D 03/14/19 $ date +%U 10 $ date -d now 星期四 三月 14 11:00:22 CST 2019 $ date -d yesterday 星期三 三月 13 11:02:00 CST 2019 $ date -d yesterday +%Y%m%d 20190313 $ date &apos;+%T%n%D&apos; 09:00:30 12/08/12 时间设置实例： //设置成20190423，这样会把具体时间设置成空00:00:00 $ date -s 20190423 //设置具体时间，不会对日期做更改 $ date -s 01:01:01 //设置全部时间 $ date -s “01:01:01 2019-04-23″ $ date -s “01:01:01 20190423″ $ date -s “2019-04-23 01:01:01″ $ date -s “20190423 01:01:01″]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[echo 命令用法]]></title>
+    <url>%2F2019%2F03%2F14%2Fecho%2F</url>
+    <content type="text"><![CDATA[echo命令: display a line of text 输出一行文本文字。 语法: echo [SHORT-OPTION]… [STRING]…常用选项:-n: 不输出换行符，（默认会输出换行符）。 -e: 启用转义字符 -E: 关闭转义字符，（默认不支持转义字符如\n \t等）。 实例： $ echo &quot;Today is a rainy day!&quot; Today is a rainy day! $ echo -n &quot;Today is a rainy day!&quot; Today is a rainy day!$ 说明：-n 选项没有输出最后的换行符，所以第二次执行的命令输出结果带$ $ echo &quot;Today is a\t rainy day!&quot; Today is a\t rainy day! $ echo -e &quot;Today is a\t rainy day!&quot; Today is a rainy day! 说明：echo命令默认带-E选项，即不启用转义字符。 只有使用-e 的时候转义字符才会发挥作用。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[hwclock 命令用法]]></title>
+    <url>%2F2019%2F03%2F14%2Fhwclock%2F</url>
+    <content type="text"><![CDATA[hwclock命令: read or set the hardware clock 读或设置硬件时钟。 语法: hwclock [function] [option…]系统时钟和硬件时钟说明：在Linux平台中有硬件时钟与系统时钟等两种时钟。 硬件时钟是指主机板上的时钟设备，也就是通常可在BIOS画面设定的时钟。 系统时钟则是指kernel中的时钟。 当Linux启动时，系统时钟会去读取硬件时钟的设定，之后系统时钟即独立运作。 Linux相关指令与函数都是读取系统时钟的设定。 常用功能（function）:-w:--systohc 把系统时间同步到硬件时间 -s:--hctosys 读取硬件时钟写到系统时间 -r:--show 读取硬件时钟 实例： $ hwclock -r hwclock: Sorry, only the superuser can use the Hardware Clock. $ sudo hwclock -r [sudo] password for hu: 2019年03月14日 13时30分50秒 CST .780776 seconds $ sudo hwclock 2019年03月14日 13时32分36秒 CST .999436 seconds 说明：一般该命令只能使用超级用户进行执行，-r 功能，为显示硬件时钟，默认为该功能。 $ date 星期四 三月 14 13:33:54 CST 2019 $ sudo hwclock 2019年03月14日 13时33分28秒 CST .515048 seconds `$ sudo hwclock -w 说明：把系统时间同步到硬件时间。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[file 命令用法]]></title>
+    <url>%2F2019%2F03%2F12%2Ffile%2F</url>
+    <content type="text"><![CDATA[file命令: determine file type 判定文件的类型。 语法: file [option] filename…linux 和 windows 可执行文件的标志说明:linux 可执行文件的标志是：ELF （executable linkable file 可执行的可链接的文件）。 windows 可执行文件的标志是：PE （Portable Executable 可移植的可执行文件）。 实例： $ file /bin/ls /bin/ls: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=d0bc0fb9b3f60f72bbad3c5a1d24c9e2a1fde775, stripped 说明：输出ls的文件类型。一定要指定绝对路径，要不然找不到。不能通过PATH,找到命令。 $ file file.md file.md: exported SGML document, UTF-8 Unicode text 说明：输出file.md 的文件类型，是一个SGML（Standard Generalized Markup Language）。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[head 命令用法]]></title>
+    <url>%2F2019%2F03%2F04%2Fhead%2F</url>
+    <content type="text"><![CDATA[head命令: output the first part of files. 输出文件的前部。 语法: head [OPTION]… [FILE]…常用选项:-n : 后跟数字，表示输出文件的前几行。不加-n ，默认输出文件的前10行。 实例： $head shellCommandCategories.md --- title: linux常用shell命令分类 date: 2018-12-05 tags: categories: - linux常用shell命令 --- # 一：说明 本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 &lt;!-- more --&gt; 说明：默认输出文件的前10行。 $head -n 2 shellCommandCategories.md --- title: linux常用shell命令分类 说明：用-n选项，输出文件的前2行。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[less 命令用法]]></title>
+    <url>%2F2019%2F03%2F04%2Fless%2F</url>
+    <content type="text"><![CDATA[less命令: opposite of more 文本文件阅读器,类似于more 语法: less file阅读器说明:支持前后翻页查看文件。 k:向上移动一行 j:向下移动一行 space：向后翻页 b : 向前翻页 q:退出程序，不按此键，文本到达末尾也不会退出。 /:查找（n:向下查找，N:向上查找） 说明：less 就是man程序用的文本查看器，比较好用，比more好用，并且效率比较高，所以建议使用此预览器。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ln 命令用法]]></title>
+    <url>%2F2019%2F03%2F04%2Fln%2F</url>
+    <content type="text"><![CDATA[ln命令: make links between files 在文件之间创建链接。 语法:ln [OPTION]… [-T] TARGET LINK_NAME (1st form) ln [OPTION]… TARGET (2nd form) ln [OPTION]… TARGET… DIRECTORY (3rd form) ln [OPTION]… -t DIRECTORY TARGET… (4th form) 语法说明：第一种形式：为TARGET文件， 创建名为LINK_NAME的链接 第二种形式：在当前文件夹，为TARGET文件，创建同名的链接文件，这时候要求TARGET不在当前文件夹中。 第三种形式：在DIRECTORY文件夹中，为TARGET文件创建同名链接文件，可以同时为多个TARGET文件创建链接文件。 第四种形式：和第三种形式功能一样。 常用选项:-s: --symbolic 创建软链接，而不是硬链接，默认情况下是硬链接。 软链接和硬链接说明:硬链接相当于文件的别名，主要有如下属性： 1、文件有相同的 inode 及 data block； 2、只能对已存在的文件进行创建； 3、不能交叉文件系统进行硬链接的创建； 4、不能对目录进行创建，只可对文件创建； 5、删除一个硬链接文件并不影响其他有相同 inode 号的文件。 软链接主要如下特性： 1、软链接有自己的文件属性及权限等； 2、可对不存在的文件或目录创建软链接； 3、软链接可交叉文件系统； 4、软链接可对文件或目录创建； 5、创建软链接时，链接计数 i_nlink 不会增加； 6、删除软链接并不影响被指向的文件，但若被指向的原文件被删除， 则相关软连接被称为死链接（即 dangling link，若被指向路径文件被重新创建，死链接可恢复为正常的软链接）。 实例： $ ls -li cat.md 9183912 -rw-rw-r-- 1 hu hu 1449 三月 4 10:23 cat.md $ ln cat.md hardLink $ ls -li 9183912 -rw-rw-r-- 2 hu hu 1449 三月 4 10:23 cat.md 9183912 -rw-rw-r-- 2 hu hu 1449 三月 4 10:23 hardLink 说明：为cat.md创建硬链接 $ ln -s cat.md symbloLink $ ls -li 9183912 -rw-rw-r-- 2 hu hu 1449 三月 4 10:23 cat.md 9183912 -rw-rw-r-- 2 hu hu 1449 三月 4 10:23 hardLink 9183913 lrwxrwxrwx 1 hu hu 6 三月 4 10:46 symbloLink -&gt; cat.md 说明：为cat.md 创建软链接 $ ls -li total 20 9183912 -rw-rw-r-- 1 hu hu 1449 三月 4 10:23 cat.md 9183911 -rw-rw-r-- 1 hu hu 12522 三月 4 10:17 shellCommandCategories.md $ mkdir test2 $ ln cat.md shellCommandCategories.md test2/ $ ls -li test2/ total 20 9183912 -rw-rw-r-- 2 hu hu 1449 三月 4 10:23 cat.md 9183911 -rw-rw-r-- 2 hu hu 12522 三月 4 10:17 shellCommandCategories.md $ rm test2/* $ ln -s cat.md shellCommandCategories.md test2/ $ ls -li test2/ total 0 9573488 lrwxrwxrwx 1 hu hu 6 三月 4 10:52 cat.md -&gt; cat.md 9573489 lrwxrwxrwx 1 hu hu 25 三月 4 10:52 shellCommandCategories.md -&gt; shellCommandCategories.md 说明：语法的第三种格式应用。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cat 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Fcat%2F</url>
+    <content type="text"><![CDATA[cat命令: concatenate files and print on the standard output 连结并输出文件到标准输出。 语法: cat [OPTION]… [FILE]…常用选项:-n:显示行号。行号不是文件内容。 -E:show ends 显示每一行的结束符，linux是$ window是$\n ?? -A:show ALL 显示所有的字符，包括制表符，空格等。 实例： $cat test.data This is a test file Test file begin. This is the first line. This is the second line. This is a tab start line 说明：把文件内容输出到标准输出，可以一次性输出多个文件。 $ cat -n test.data 1 This is a test file 2 Test file begin. 3 This is the first line. 4 This is the second line. 5 This is a tab start line 说明：输出文件和行号。 $ cat -E test.data This is a test file$ Test file begin.$ This is the first line.$ This is the second line.$ This is a tab start line$ 说明：输出文件中每一行的结束符号。 $ cat -A test.data This is a test file$ Test file begin.$ This is the first line.$ This is the second line.$ ^IThis is a tab start line$ 说明： -A选项，显示文件中所有的字符，制表符，换行符。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cp 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Fcp%2F</url>
+    <content type="text"><![CDATA[cp命令: copy files and directories 拷贝文件和目录。 语法:cp [OPTION]… [-T] SOURCE DEST cp [OPTION]… SOURCE… DIRECTORY cp [OPTION]… -t DIRECTORY SOURCE… 语法说明：只允许处理一个目的地。 不能把多个文件复制成一个文件。 可以把多个文件复制到一个目录。 默认情况下不复制目录。 常用选项: -r:recursive 递归复制一个目录 -f:force 强制复制，如果目标文件存在则覆盖。 -i:interactive 交互式，提示。root 用户会自动设置cp = cp -i别名，而普通用户没有。 -p:--preserve 复制的时候保留属主，属组，权限，时间戳等属性信息。不加此选项，谁复制的就属于谁了。 -a:递归，复制链接，保持文件所有属性, 用于实现备份，归档复制，保留一切属性。 -L:复制链接所指向的文件 -P:复制链接，而不是文件 -s:建立链接文件，而不是复制文件。可以建立链接文件的链接文件。 实例： $ ls -l total 4 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 guyang drwxrwxr-x 2 hu hu 4096 二月 22 11:03 hhh $ cp guyang guyang cp: &apos;guyang&apos; and &apos;guyang&apos; are the same file $ cp guyang guyang1 $ ls -l total 4 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 guyang -rw-rw-r-- 1 hu hu 0 二月 22 11:05 guyang1 drwxrwxr-x 2 hu hu 4096 二月 22 11:03 hhh 说明：文件可以直接复制，从source 到 dest. $ ls -l total 4 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 guyang -rw-rw-r-- 1 hu hu 0 二月 22 11:05 guyang1 drwxrwxr-x 2 hu hu 4096 二月 22 11:03 hhh $ cp hhh hhh2 cp: omitting directory &apos;hhh&apos; $ cp -r hhh hhh2 $ ls -l total 8 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 guyang -rw-rw-r-- 1 hu hu 0 二月 22 11:05 guyang1 drwxrwxr-x 2 hu hu 4096 二月 22 11:03 hhh drwxrwxr-x 2 hu hu 4096 二月 22 11:09 hhh2 说明：复制目录要加-r选项 $ ls -l guyang -rw-rw-r-- 1 hu hu 0 二月 22 11:03 guyang $ sudo cp guyang root $ ls -l root -rw-r--r-- 1 root root 0 二月 22 11:12 root $ sudo cp -p guyang root2 $ ls -l root2 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 root2 说明：从上倒下可以看出，-p 选项会保留属主，属组，权限，时间戳等属性信息。不加此选项，谁复制的就属于谁了。 $ ls -l lrwxrwxrwx 1 hu hu 5 二月 22 11:18 linkroot -&gt; root2 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 root2 $ cp linkroot linkroot2 $ ls -l lrwxrwxrwx 1 hu hu 5 二月 22 11:23 linkroot -&gt; root2 -rw-rw-r-- 1 hu hu 0 二月 22 11:23 linkroot2 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 root2 $ cp -P linkroot linkroot3 $ ls -l lrwxrwxrwx 1 hu hu 5 二月 22 11:23 linkroot -&gt; root2 -rw-rw-r-- 1 hu hu 0 二月 22 11:23 linkroot2 lrwxrwxrwx 1 hu hu 5 二月 22 11:24 linkroot3 -&gt; root2 -rw-rw-r-- 1 hu hu 0 二月 22 11:03 root2 说明：从上到下可以看出，-P选项，可以用来复制链接，而不是链接指向的文件。 $ cp -s root rootlink12 $ ls -l rootlink12 lrwxrwxrwx 1 hu hu 4 二月 22 13:11 rootlink12 -&gt; root 说明：建立链接文件，而不是复制文件。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[more 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Fmore%2F</url>
+    <content type="text"><![CDATA[more命令: file perusal filter for crt viewing. 文本文件阅读器。 语法: more [options] file…阅读器说明:支持前后翻页查看文件。 空格按键：向后翻页 b 按键: 向前翻页 翻到文件最后，将自动退出程序。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mv 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Fmv%2F</url>
+    <content type="text"><![CDATA[mv命令: move (rename) files 移动或重命名文件。 语法:mv [OPTION]… [-T] SOURCE DESTmv [OPTION]… SOURCE… DIRECTORYmv [OPTION]… -t DIRECTORY SOURCE… 语法说明：移动目录的时候不需要加任何选项。 不能把目录复制成一个文件。 常用选项: -i: interactive 如果目标存在会提示是否覆盖 -f: force 强制移动。 -t: target 指定目标，这样就可以先指定目标了。 实例： $ ls -l -rw-rw-r-- 1 hu hu 0 二月 22 13:30 guyan drwxrwxr-x 2 hu hu 4096 二月 22 13:30 hhh $ mv guyan guyan2 $ ls -l -rw-rw-r-- 1 hu hu 0 二月 22 13:30 guyan2 drwxrwxr-x 2 hu hu 4096 二月 22 13:30 hhh 说明：把当前文件移动到当前目录，名字不一样的情况下，将发生重命名。 $ mv guyan2 hhh/ $ ls -l drwxrwxr-x 2 hu hu 4096 二月 22 13:34 hhh $ ls -l hhh -rw-rw-r-- 1 hu hu 0 二月 22 13:30 guyan2 说明：把文件移动到目录。 $ mv hhh/ .. $ ls . $ls .. hhh y 说明：移动目录不需要加参数。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rm 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Frm%2F</url>
+    <content type="text"><![CDATA[rm命令: remove files or directories 删除文件或目录。 语法: rm [OPTION]… [FILE]…常用选项:-f force 强制删除，不提示错误 -r recursive 递归删除目录，非空也可删除 -i interaction 交互式删除， -v verbose 输出删除过程信息提示 实例： $ ls hhh y $ rm -rfv * removed &apos;hhh/guyan2&apos; removed directory &apos;hhh&apos; removed directory &apos;y&apos; $ ls 说明：强制并递归删除当前文件夹下所有的文件。并输出删除过程。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[touch 命令用法]]></title>
+    <url>%2F2019%2F02%2F22%2Ftouch%2F</url>
+    <content type="text"><![CDATA[touch命令: change file timestamps 修改文件时间戳。 语法: touch [OPTION]… FILE…常用选项:-c: --no-create 不存在，也不创建文件 -a: 只改变访问时间到当前时间 -m: 只改变修改时间到当前时间 -t: 指定时间,配合-a -m使用，指定要修改到的时间, 时间格式是[[CC]YY]MMDDhhmm[.ss]。 linux 文件时间戳：linux 中每一个文件都有三个时间戳，可以用stat命令查看，分别为： Access timestamp: 文件被访问，如读，用cat查看等，都会修改访问时间戳。 Modify timestamp: 文件内容被修改，如编辑，write 等都会修改文件的修改时间戳。 Change timestamp: 改变时间戳，此时间戳是表示文件的元数据改变的时间戳，如大小改变，文件名，等，都会修改文件的改变时间戳。 注：文件的内容分为两部分，一部分是文件内容，另一部分是描述文件数据的数据，即元数据，文件名，大小等信息。 实例： $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-01-29 18:19:26.444445711 +0800 Modify: 2019-01-29 18:19:16.704445422 +0800 Change: 2019-02-15 10:50:24.206052684 +0800 Birth: - $ touch -c temp.txt $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-02-22 10:17:27.549216189 +0800 Modify: 2019-02-22 10:17:27.549216189 +0800 Change: 2019-02-22 10:17:27.549216189 +0800 Birth: - 说明：前后对比可以看出，touch会把文件的时间戳修改为当前时间，-c 选项只是用来无此文件，也不创建。 $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-02-22 10:17:27.549216189 +0800 Modify: 2019-02-22 10:17:27.549216189 +0800 Change: 2019-02-22 10:17:27.549216189 +0800 Birth: - $ touch temp.txt $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-02-22 10:26:23.497232088 +0800 Modify: 2019-02-22 10:17:27.549216189 +0800 Change: 2019-02-22 10:26:23.497232088 +0800 Birth: - 说明：前后对比可以看出，-a 选项，修改了访问时间，但是Change timestamp 也自动修改了， 这是因为，时间戳本来就属于文件元数据的一部分，所以，访问时间戳改变，则元数据发生了改变 那么，改变时间戳相应的就发生了改变。 $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-02-22 10:26:23.497232088 +0800 Modify: 2019-02-22 10:17:27.549216189 +0800 Change: 2019-02-22 10:26:23.497232088 +0800 Birth: - $ touch -m -t 201902211010.10 temp.txt $ stat temp.txt File: &apos;temp.txt&apos; Size: 19 Blocks: 8 IO Block: 4096 regular file Device: 805h/2053d Inode: 4858590 Links: 1 Access: (0664/-rw-rw-r--) Uid: ( 1000/ hu) Gid: ( 1000/ hu) Access: 2019-02-22 10:26:23.497232088 +0800 Modify: 2019-02-21 10:10:10.000000000 +0800 Change: 2019-02-22 10:36:49.481250658 +0800 Birth: - 说明：指定修改文件的修改时间，-t的指定格式：[[CC]YY]MMDDhhmm[.ss] $ ls -a . .. $ touch -c guyang $ ls -a . .. $ touch guyang $ ls -a . .. guyang 说明：从上到下，体现了-c选项的真正作用。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mkdir 命令用法]]></title>
+    <url>%2F2019%2F02%2F21%2Fmkdir%2F</url>
+    <content type="text"><![CDATA[mkdir命令: make directories 创建空文件夹。 语法: mkdir [OPTION]… DIRECTORY…常用选项:-p: parent 会创建不存在的父目录 -v: verbose 详细信息，显示创建过程。 实例： $ mkdir -pv ./hello/guyang/ mkdir: created directory &apos;./hello&apos; mkdir: created directory &apos;./hello/guyang/&apos; 说明：一层一层的创建目录，不存在，就创建，并使用-v选项，输出创建的过程。 $ mkdir guyang 说明：在当前文件夹下创建目录guyang $ mkdir -pv ./{x/y,hll} mkdir: created directory &apos;./x&apos; mkdir: created directory &apos;./x/y&apos; mkdir: created directory &apos;./hll&apos; 说明：使用命令行扩展，在小括号处分为两路创建，创建过程如输出信息所示。 $ mkdir -pv {a,b}_{c,d} mkdir: created directory &apos;a_c&apos; mkdir: created directory &apos;a_d&apos; mkdir: created directory &apos;b_c&apos; mkdir: created directory &apos;b_d&apos; 说明：使用命令行扩展，创建过程如输出信息所示。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[tree 命令用法]]></title>
+    <url>%2F2019%2F02%2F21%2Ftree%2F</url>
+    <content type="text"><![CDATA[tree命令: list contents of directories in a tree-like format. 以倒树的形式列出文件夹中的内容。 语法: type [options] [directory…]常用选项:无：无参数将递归输出文件夹结构，但是不包含因隐藏文件，若不指定目录，则输出当前目录的内容结构 -a: 输出所有的文件，包括隐藏文件。 -d：只输出文件夹 实例： $tree -a hello/ hello/ ├── guyang ├── hhh.c └── .hidefile 1 directory, 2 files 说明：以倒树的形状输出所有的文件，包括隐藏文件。 $tree -d hello/ hello/ └── guyang 1 directory 说明：以倒树装输出目录结构，但是只输出文件夹。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[linux运维教程前言]]></title>
+    <url>%2F2019%2F02%2F21%2Fyunweisubjectpreface%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>专题教程</category>
+        <category>linux运维</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ls 命令用法]]></title>
+    <url>%2F2019%2F02%2F19%2Fls%2F</url>
+    <content type="text"><![CDATA[ls命令: list directory contents 列出目录内容 语法: ls [option] … [FILE]… 常用选项: -l :长格式显示，显示文件信息。 -h :human readable 单位换算的。默认为b(字节)可以转换为M , G等等。根据大小自动转换。 -a :all 显示所有文件，包括以点开头的隐藏文件。.代表当前目录 .. 代表父目录 -A :显示所有文件，但是不显示. 和 .. -d :显示目录自身属性，不是目录里面的文件。 -i :显示文件的索引节点号 index node : 计算机识别计算机中唯一的文件 -r :逆序显示文件 -R :递归显示Recursion, 显示目录中的目录中的文件和目录... -s :输出文件申请的空间大小 -S :按文件的大小排序，最大的在最上面 -t :按修改时间（modify timestamp）排序，最新的在最上面 NOTE：不加任何选项和参数的情况下，ls命令，会显示当前文件夹下的所有文件名。 ls -l 信息说明： $ ls -l mkfs.md -rw-rw-r-- 1 hu hu 186 一月 14 14:35 mkfs.md 列信息说明： 第一列: 一共十个字符，第一个字符表示文件类型，后九个字符每三个为一组，从左到右，分别表示属主，属组，其他对该文件的权限。 第一个字符表示的文件类型有七种（linux所有的文件类型），分别用不同字符表示，如下： -:普通文件 d:directory 目录文件 c:character 字符设备文件 b:block 块设备文件 l:link 符号链接文件(symbolic link file软链接) p:pipe 管道文件 s:socket 套接字文件 后九个字符，每三个字符为一组，表示文件权限，rwx分别表示可读，可写，可执行。-代表无该权限。 第二列：文件被硬链接的次数 第三列：文件属主名 第四列：文件属组名 第五列：文件大小，默认单位是字节 第六列：最近一次被修改的时间戳，在linux中每一个文件都有三个时间戳，分别为： 最近访问时间（access timestamp）：即最近一次被读的时间。 最近修改时间（modify timestamp）: 即最近一次修改文件内容的时间。 最近改变时间（change timestamp）: 即最近一次文件的元数据被修改的时间，所谓元数据就是描述数据的数据，此处元 数据指用来描述一个文件的特征的系统数据，诸如访问权限、文件拥有者以及文件 数据块的分布信息(inode...)等等。 第七列：文件名 实例： $ ls -a . .. ls.md 说明：显示当前目录中所有的文件，包括 . 和 .. $ ls -lh -rw-rw-r-- 1 hu hu 188 一月 14 14:35 which.md -rw-rw-r-- 1 hu hu 1.7K 一月 14 14:35 who.md 说明：以长格式的形式，输出当前文件夹下的文件信息，并把文件大小换算成人类容易阅读的形式。 $ ls -ld . drwxrwxr-x 2 hu hu 4096 二月 12 18:53 . 说明：显示当前目录的属性，而不是目录中的文件。 $ls -i mkfs.md 4857503 mkfs.md 说明：显示mkfs.md的索引节点号，计算机标识表示唯一文件的方式。 $ls -lrt . -rw-rw-r-- 1 hu hu 193 一月 14 14:35 seq.md -rw-rw-r-- 1 hu hu 193 一月 14 14:35 sed.md -rw-rw-r-- 1 hu hu 11682 二月 12 18:24 shellCommandCategories.md -rw-rw-r-- 1 hu hu 351 二月 12 18:52 pwd.md -rw-rw-r-- 1 hu hu 568 二月 12 18:53 cd.md 说明：长格式输出当前文件夹中的文件信息，并按照最近修改时间逆序排序，即最新的文件在最下面。 $ls -lShr . -rw-rw-r-- 1 hu hu 4.4K 一月 14 14:35 HowToMakeDreamTrue.md -rw-rw-r-- 1 hu hu 4.7K 一月 14 14:35 myWeekPlan.md -rw-rw-r-- 1 hu hu 5.1K 一月 14 14:35 tmux.md -rw-rw-r-- 1 hu hu 5.2K 一月 14 14:35 HowToStudyEnglish.md -rw-rw-r-- 1 hu hu 12K 二月 12 18:24 shellCommandCategories.md 说明：长格式输出当前文件夹下文件的信息，并以大小排序，用r选项反转排序，让最大的在最下面，并且让大小以 人类易读的形式显示。 $ls -lsh HowToMakeDreamTrue.md 8.0K -rw-rw-r-- 1 hu hu 4.4K 一月 14 14:35 HowToMakeDreamTrue.md 说明：显示 系统为HowToMakeDreamTrue.md申请的空间，实际大小为4.4k, 系统却为该文件申请了8k大小的空间。这跟系统 的空间管理有关。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[cd 命令用法]]></title>
+    <url>%2F2019%2F02%2F12%2Fcd%2F</url>
+    <content type="text"><![CDATA[cd命令: Change working directory 切换工作目录。 语法: cd [options] [dir]常用选项: 无实例： $ cd 说明：切换到当前用户家目录 $ cd ~ 说明：切换到当前用户家目录 $ cd ~guyang 说明：切换到guyang用户家目录 $ cd - 说明：在当前工作目录和上一次的工作目录来回切换]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[pwd 命令用法]]></title>
+    <url>%2F2019%2F02%2F12%2Fpwd%2F</url>
+    <content type="text"><![CDATA[pwd命令: Print working directory 打印工作目录。** 语法: pwd [options] …常用选项: 无实例： $ pwd 说明：输出当前工作目录]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[rmdir 命令用法]]></title>
+    <url>%2F2018%2F12%2F21%2Frmdir%2F</url>
+    <content type="text"><![CDATA[rmdir命令: remove empty directories 删除空文件夹。 语法: rmdir [OPTION]… DIRECTORY…常用选项:-p: parent 删除一脉单传的文件夹。 -v: verbose 详细信息，显示删除过程。 实例： $tree ./guyang/ ./guyang/ └── blog └── success $rmdir -pv ./guyang/blog/success/ rmdir: removing directory, &apos;./guyang/blog/success/&apos; rmdir: removing directory, &apos;./guyang/blog&apos; rmdir: removing directory, &apos;./guyang&apos; rmdir: removing directory, &apos;.&apos; rmdir: failed to remove directory &apos;.&apos;: Invalid argument 说明：一次行删除一脉单传的空目录。删除过程如上所示。 $ rmdir ./guyang 说明：直接删除空目录，非空目录将报错。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[type 命令用法]]></title>
+    <url>%2F2018%2F12%2F21%2Ftype%2F</url>
+    <content type="text"><![CDATA[type命令: Display information about command type. 输出命令类型信息 语法: type [options] name [name …]常用选项:-a: 输出name命令的所有位置信息，包括 aliases, builtins, and functions linux 命令类型：linux命令以是否为shell的内置功能为界限分为内部命令和外部命令。 其中内部命令又称为内建命令，是整合到shell内部的一些小功能，并不能找到这个小功能在linux中对应的 二进制文件。 而外部命令则是在linux文件系统中一个独立的二进制小程序，可以找到其二进制文件的位置，并不属于shell程序的内置功能。 实例： $ type ls ls is aliased to `ls --color=auto&apos; $ type -a ls ls is aliased to `ls --color=auto&apos; ls is /bin/ls 说明：前后对比-a选项的作用 $ type ls type ls is aliased to `ls --color=auto&apos; type is a shell builtin 说明：一次性查看多个命令的类型信息。]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[我要怎样学习投资理财？]]></title>
     <url>%2F2018%2F12%2F19%2FHowToStudyManageMoney%2F</url>
     <content type="text"><![CDATA[一：说明 本文分析了我学习投资理财的原因以及怎样才能学好。 二：为什么要学习投资理财？ 常言道你不理财，财不理你。想实现财务自由，必须得对自己的财务管理，并且还是很好的管理，不能盲目消费，并且要设立财务目标，一步一个脚印，直到实现自己的梦想。 总结一下，学习投资理财的原因就是让自己未来的生活不那么被动，并且最终实现自己的梦想。 三：要怎样才能学好投资理财？ 综合我当前的学识，若想学好投资理财，需要遵循如下几条： 养成记账的习惯 记账是理财的第一步，其目的在于了解自身财务状况，养成不盲目消费的习惯。并且设置财务预算，财务目标。现初步设定，如下财务年规划： 年度 年度入账 年终净资产(万元) 2018年 12 12 2019年 13 25 2020年 20 45 2021年 35 80 2022年 40 120 学习理财方面的知识 世间万物结有道可循，理财也不例外。以我现在的状况，只能从书本中获得相关的知识，所以，我要读书，从基本的概念到深入的理解，由浅入深，一步一步的来。下面是我的书单。 序号 书名 是否已读 1 财富自由之路 ing 2 学会花钱 no 3 巴比伦富翁的理财课 no 4 个人理财（译者郭宁） no 5 钱的外遇 no 6 聪明的投资者 no 7 战胜华尔街 no 8 笑傲股市 no 9 逃不开的经济周期 no 10 金融心理学 no 11 股票趋势技术分析 no 12 黑天鹅 no 投资模拟和实践练习 投资这门学问，不止要学习理论知识，还要注重实践。先从最基本的存储，基金定投，等入手，保持资金免收通货膨胀的作用。然后开始模拟炒股，学习股票相关的知识，开户模拟炒股。随着自己这方面知识的增加，投资可以成为自己发家致富的技能。 本文完毕，感谢阅读。]]></content>
@@ -96,21 +410,21 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[basename 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fbasename%2F</url>
-    <content type="text"><![CDATA[basename命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>系统管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[awk 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fawk%2F</url>
     <content type="text"><![CDATA[awk命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>文件和目录管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[basename 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Fbasename%2F</url>
+    <content type="text"><![CDATA[basename命令 待添加。 语法选项]]></content>
+      <categories>
+        <category>linux常用shell命令</category>
+        <category>系统管理</category>
       </categories>
   </entry>
   <entry>
@@ -138,24 +452,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>压缩和解压</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[cat 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fcat%2F</url>
-    <content type="text"><![CDATA[cat命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[cd 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fcd%2F</url>
-    <content type="text"><![CDATA[cd命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -222,15 +518,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[cp 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fcp%2F</url>
-    <content type="text"><![CDATA[cp命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[cpio 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fcpio%2F</url>
     <content type="text"><![CDATA[cpio命令 待添加。 语法选项]]></content>
@@ -255,24 +542,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[cut 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fcut%2F</url>
-    <content type="text"><![CDATA[cut命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[date 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fdate%2F</url>
-    <content type="text"><![CDATA[date命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>系统管理</category>
       </categories>
   </entry>
   <entry>
@@ -303,15 +572,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[diff 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fdiff%2F</url>
-    <content type="text"><![CDATA[diff命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[dig 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fdig%2F</url>
     <content type="text"><![CDATA[dig命令 待添加。 语法选项]]></content>
@@ -339,15 +599,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[du 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fdu%2F</url>
-    <content type="text"><![CDATA[du命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>系统管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[dump 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fdump%2F</url>
     <content type="text"><![CDATA[dump命令 待添加。 语法选项]]></content>
@@ -363,15 +614,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>磁盘管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[echo 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fecho%2F</url>
-    <content type="text"><![CDATA[echo命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -417,15 +659,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>磁盘管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[file 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ffile%2F</url>
-    <content type="text"><![CDATA[file命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>系统管理</category>
       </categories>
   </entry>
   <entry>
@@ -525,15 +758,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>关机重启</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[head 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fhead%2F</url>
-    <content type="text"><![CDATA[head命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -663,18 +887,18 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[lastlog 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Flastlog%2F</url>
-    <content type="text"><![CDATA[lastlog命令 待添加。 语法选项]]></content>
+    <title><![CDATA[last 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flast%2F</url>
+    <content type="text"><![CDATA[last命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[last 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Flast%2F</url>
-    <content type="text"><![CDATA[last命令 待添加。 语法选项]]></content>
+    <title><![CDATA[lastlog 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Flastlog%2F</url>
+    <content type="text"><![CDATA[lastlog命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
@@ -699,24 +923,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[less 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fless%2F</url>
-    <content type="text"><![CDATA[less命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[ln 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fln%2F</url>
-    <content type="text"><![CDATA[ln命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[locale 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Flocale%2F</url>
     <content type="text"><![CDATA[locale命令 待添加。 语法选项]]></content>
@@ -732,15 +938,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>查找命令</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[ls 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fls%2F</url>
-    <content type="text"><![CDATA[ls命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -852,15 +1049,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[mkdir 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fmkdir%2F</url>
-    <content type="text"><![CDATA[mkdir命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[mke2fs 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fmke2fs%2F</url>
     <content type="text"><![CDATA[mke2fs命令 待添加。 语法选项]]></content>
@@ -888,15 +1076,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[more 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fmore%2F</url>
-    <content type="text"><![CDATA[more命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[mount 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fmount%2F</url>
     <content type="text"><![CDATA[mount命令 待添加。 语法选项]]></content>
@@ -912,15 +1091,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[mv 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fmv%2F</url>
-    <content type="text"><![CDATA[mv命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -948,15 +1118,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>用户管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[nl 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fnl%2F</url>
-    <content type="text"><![CDATA[nl命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -1122,15 +1283,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[pwd 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fpwd%2F</url>
-    <content type="text"><![CDATA[pwd命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[quota 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fquota%2F</url>
     <content type="text"><![CDATA[quota命令 待添加。 语法选项]]></content>
@@ -1218,24 +1370,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[rm 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Frm%2F</url>
-    <content type="text"><![CDATA[rm命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[rmdir 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Frmdir%2F</url>
-    <content type="text"><![CDATA[rmdir命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -1356,30 +1490,12 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[sort 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fsort%2F</url>
-    <content type="text"><![CDATA[sort命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[source 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fsource%2F</url>
     <content type="text"><![CDATA[source命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[stat 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fstat%2F</url>
-    <content type="text"><![CDATA[stat命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -1428,18 +1544,18 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[telnet 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftelnet%2F</url>
-    <content type="text"><![CDATA[telnet命令 待添加。 语法选项]]></content>
+    <title><![CDATA[tcpdump 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftcpdump%2F</url>
+    <content type="text"><![CDATA[tcpdump命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[tcpdump 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftcpdump%2F</url>
-    <content type="text"><![CDATA[tcpdump命令 待添加。 语法选项]]></content>
+    <title><![CDATA[telnet 命令用法]]></title>
+    <url>%2F2018%2F12%2F05%2Ftelnet%2F</url>
+    <content type="text"><![CDATA[telnet命令 待添加。 语法选项]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>网络管理</category>
@@ -1461,24 +1577,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[touch 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftouch%2F</url>
-    <content type="text"><![CDATA[touch命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[tree 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Ftree%2F</url>
-    <content type="text"><![CDATA[tree命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>文件和目录管理</category>
       </categories>
   </entry>
   <entry>
@@ -1653,15 +1751,6 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[whereis 命令用法]]></title>
-    <url>%2F2018%2F12%2F05%2Fwhereis%2F</url>
-    <content type="text"><![CDATA[whereis命令 待添加。 语法选项]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
-        <category>查找命令</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[which 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fwhich%2F</url>
     <content type="text"><![CDATA[which命令 待添加。 语法选项]]></content>
@@ -1673,7 +1762,7 @@
   <entry>
     <title><![CDATA[who 命令用法]]></title>
     <url>%2F2018%2F12%2F05%2Fwho%2F</url>
-    <content type="text"><![CDATA[who命令 输出当前登录本机的用户信息。 语法who [option] [FILE | ARG1 ARG2] 注：一般并不指定[FILE | ARG1 ARG2] 选项不加选项：显示当前登录的用户名，登录线路（tty），登录时间，备注 -H： 带表头输出 -b： 输出最近一次启动系统的时间 --ips: 输出远程登录的ip地址，而不是主机名 -m： 相当于whoami,即输出当前活动终端用户信息，与stdin相连的。 -q： 输出当前登录本机的所有用户名，和用户数 -r： 输出当前run-level -a: 输出所有信息 常用实例123456$ who -HNAME LINE TIME COMMENThzy tty7 2018-12-24 19:23 (:0)hzy pts/19 2018-12-24 19:31 (tmux(3717).%0)hzy pts/20 2018-12-24 19:31 (tmux(3717).%1)hzy pts/21 2018-12-24 19:45 (tmux(3717).%2) 123$ who -qhzy hzy hzy hzy# users=4 12$ who -rrun-level 5 2018-12-24 19:22 12345678$ who -asystem boot 2018-12-24 19:22run-level 5 2018-12-24 19:22LOGIN tty1 2018-12-24 19:23 1147 id=tty1hzy + tty7 2018-12-24 19:23 01:03 1250 (:0)hzy + pts/19 2018-12-24 19:31 00:54 3717 (tmux(3717).%0)hzy + pts/20 2018-12-24 19:31 . 3717 (tmux(3717).%1)hzy + pts/21 2018-12-24 19:45 00:39 3717 (tmux(3717).%2)]]></content>
+    <content type="text"><![CDATA[who命令 show who is logged on. 输出当前登录本机的用户信息。 语法who [option] [FILE | ARG1 ARG2] 注：一般并不指定[FILE | ARG1 ARG2] 选项不加选项：显示当前登录的用户名，登录线路（tty），登录时间，备注 -H： 带表头输出 -b： 输出最近一次启动系统的时间 --ips: 输出远程登录的ip地址，而不是主机名 -m： 相当于whoami,即输出当前活动终端用户信息，与stdin相连的。 -q： 输出当前登录本机的所有用户名，和用户数 -r： 输出当前run-level -a: 输出所有信息 常用实例123456$ who -HNAME LINE TIME COMMENThzy tty7 2018-12-24 19:23 (:0)hzy pts/19 2018-12-24 19:31 (tmux(3717).%0)hzy pts/20 2018-12-24 19:31 (tmux(3717).%1)hzy pts/21 2018-12-24 19:45 (tmux(3717).%2) 123$ who -qhzy hzy hzy hzy# users=4 12$ who -rrun-level 5 2018-12-24 19:22 12345678$ who -asystem boot 2018-12-24 19:22run-level 5 2018-12-24 19:22LOGIN tty1 2018-12-24 19:23 1147 id=tty1hzy + tty7 2018-12-24 19:23 01:03 1250 (:0)hzy + pts/19 2018-12-24 19:31 00:54 3717 (tmux(3717).%0)hzy + pts/20 2018-12-24 19:31 . 3717 (tmux(3717).%1)hzy + pts/21 2018-12-24 19:45 00:39 3717 (tmux(3717).%2)]]></content>
       <categories>
         <category>linux常用shell命令</category>
         <category>系统管理</category>
@@ -1686,14 +1775,6 @@
       <categories>
         <category>linux常用shell命令</category>
         <category>压缩和解压</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[linux常用shell命令分类]]></title>
-    <url>%2F2018%2F12%2F05%2FshellCommandCategories%2F</url>
-    <content type="text"><![CDATA[一：说明本文对常用的shell命令进行了分类，便于记忆，命令的详细内容，请直接点击命令本身。当前收录187个命令。 二：分类1、文件和目录管理（31） 命令名 功能说明 cd pwd mkdir rmdir tree ls touch cp mv rm cat more less head ln diff vimdiff rename stat md5sum paste nl sort uniq seq read echo cut grep awk sed 2、权限管理（7） 命令名 功能说明 chmod chown chgrp umask setfacl chattr lsattr 3、用户管理（7） 命令名 功能说明 useradd passwd userdel groupadd groupdel gpasswd newgrp 4、查找命令（7） 命令名 功能说明 which whereis locate find grep history finger 5、帮助命令（3） 命令名 功能说明 man help info 6、压缩和解压（7） 命令名 功能说明 tar 用来压缩文件，解压缩文件，打包文件 zip unzip gzip gunzip bzip2 bunzip2 7、网络管理（24） 命令名 功能说明 ping ifconfig netstat nslookup dig curl wget traceroute nmap arp telnet tcpdump ab scp ifup ifdown dhclient nc iftop ntpdate ntpd mutt ethtool mii-tool 命令用法 8、系统管理（53） 命令名 功能说明 w who 输出当前登录本机的用户信息 last lastlog finger id ps top pstree free sar uptime jobs lsb_release lsof file chkconfig setup sync su du at crontab date alias unalias chage set unset export env locale declare source dump restore bc nohup lsmod tac dirname basename hostname time clear kill killall pkill modprobe iconv dmidecode ntsysv runlevel 9、关机重启（6） 命令名 功能说明 init reboot shutdown halt poweroff 10、软件安装与卸载（10） 命令名 功能说明 rpm cpio rpm2cpio ldconfig apt-get apt-cache aptitude ldd sz rz 11、磁盘管理（32） 命令名 功能说明 df fsck mount umount 用来卸载文件系统 dumpe2fs fdisk mkfs mke2fs parted quotacheck edquota quotaon quotaoff quota repquota setquota pvcreate pvscan pvdisplay pvremove vgcreate vgscan vgdisplay vgextend vgreduce vgremove lvcreate lvscan lvdisplay lvresize resize2fs lvremove]]></content>
-      <categories>
-        <category>linux常用shell命令</category>
       </categories>
   </entry>
   <entry>
